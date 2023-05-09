@@ -1,0 +1,43 @@
+/* Base Styles */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Dropdown */
+
+  ol, ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  nav > ul{
+    display:flex;
+    flex-direction: row; 
+  }
+
+  nav li{
+    border: 1px black solid;
+    padding: 0.5em 1em;
+    width: 7em;
+    background-color: #00536D;
+    color: white;
+    transform: translateX(-1em);
+  }
+
+nav ul ul{
+  transform: scale(1,0);
+  trasform-origin: top center;
+  position: absolute;
+  top:100%;
+transition: 0.3s;
+}
+    
+nav li:hover ul{
+transform: scale(1,1);
+  transition: 0.3s;
+}
+       
+
+
+
