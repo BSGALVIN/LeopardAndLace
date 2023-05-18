@@ -1,0 +1,27 @@
+<h2>Dropdown menu</h2>
+
+    <nav>
+    <ul>
+      <li>
+        Books
+        <ul>
+          <li>Fiction</li>
+          <li>Non-fiction</li>
+        </ul>
+      </li>
+      <li>
+        Games
+        <ul>
+          <li>Board games</li>
+          <li>Video games</li>
+        </ul>        
+      </li>
+      <li>
+        Music
+        <ul>
+          <li>Digital</li>
+          <li>Vynil</li>
+        </ul>        
+      </li>
+    </ul>
+  </nav>
