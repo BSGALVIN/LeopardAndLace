@@ -1,0 +1,15 @@
+.Group-1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+    
+.Group-1 > .product-card{
+    width: 400px;
+    padding: 20px;
+}
+
+.Group-1> .product-card > img{
+    width: 100%;
+    max-width: 200px;
+}
