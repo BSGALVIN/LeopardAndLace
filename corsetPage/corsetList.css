@@ -1,20 +1,158 @@
+ol, ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  nav > ul{
+    display:flex;
+    flex-direction: row; 
+  }
+
+  nav li{
+    border: 1px black solid;
+    padding: 0.5em 1em;
+    width: 7em;
+    background-color: #00536D;
+    color: white;
+    transform: translateX(-1em);
+  }
+
+nav ul ul{
+    transform: scale(1,0);
+    transform-origin: top center;
+    position: absolute;
+    top:100%;
+    transition: 0.3s;
+  }
+       
+  nav li:hover ul{
+    transform: scale(1,1);
+    transition: 0.3s;
+  }
+    
+/* product images */
+
 .Group-1 {
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* i actually have no idea what this means but have been told to use it so here goes::
+    grid-template-areas: "productImg productDescription" */
+
+    padding-bottom: 10px;
+
   }
   
   .product-card {
-    padding:20px;
-    margin-bottom:20px;
+    padding:10px;
+    margin-bottom:10px;
 }
     
 .product-card > img{
-    width:80%;
-    justify-self: center;
+    /* width:60%;
+    justify-self: center; */
+
+    justify-self: end;
+
+    min-width: 200px;
+    max-width: 600px;
+    width:100%;
+
 }
     
 .Group-1 > .product-card {
-    width:400px;
-    max-width:400px;
+    /* width:350px;
+    max-width:350px; */
+
+    justify-self: center;
+
 }
+
+/* .Group-1 > product-info {
+    grid-area: productInfo
+} */
+
+/* on hover: image changes */
+
+.product-image {
+    display: inline-block;
+    position: relative;
+  }
+
+  .product-image img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .product-image .hover-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .product-image:hover .hover-image {
+    display: block;
+  }
+
+
+
+
+
+/* image hover below */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.media > img {
+    width: 100%;
+}
+
+.media {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer {
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    transition: all 0.9s ease;
+}
+
+
+.media:hover .layer {
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+}
+    
+.layer > p{
+    transform: scale(0);
+    transition: all 0.9s ease;
+}
+    
+.media:hover .layer > p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+}   
+
+
