@@ -29,6 +29,97 @@ nav {
     height:60px;
   }
 
+  #bestsellersbanner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(bannerimage1.png);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 30px;
+    border-radius: 20px;
+  }
+
+  #bestsellersbanner h1{
+    color: white;
+    font-weight: 900;
+    font-size: 80px;
+    -webkit-text-stroke: 2px rgb(19, 16, 39);
+  }
+
+  #bestsellersbanner h2{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 10%;
+  }
+
+  #newsletter{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-image: ; */
+    /* background-repeat: no-repeat; */
+    background-position: 20% 30%;
+    background-color: rgb(63, 56, 113);
+    padding: 30px;
+    margin: 20px;
+  }
+
+  #newsletter h2{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 10%;
+  }
+
+  #newsletter p{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 14px;
+    padding-left: 10%;
+  }
+
+  #newsletter p span {
+    color: rgb(233, 192, 43);
+  }
+
+  #newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 90%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #newsletter button{
+    background-color: rgb(233, 192, 43);
+    color: rgb(63, 56, 113);
+    height: 3.24rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 20%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  #newsletter .form{
+    display: flex;
+    width: 40%;
+  }
 
   footer{
     height:30vh;
@@ -39,6 +130,7 @@ nav {
   }
 
   footer > div{
+    padding: 30px;
     /* idk something here about how they align on either side of the screen; 
     not clumped and center */
   }
