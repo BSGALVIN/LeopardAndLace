@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cproductpage.css">
     <title>Pink Brocade Corset</title>
+
+    <script type="text/javascript" src="cproductpage.js"></script>
+
 </head>
 <body>
  <header>
@@ -26,7 +29,33 @@
       </h6>
 
 </section>
+<!-- hide/show sizing information and description -->
 
+<!-- drop down options: sizes 
+https://www.w3schools.com/css/css_dropdowns.asp -->
+<div class="dropdown">
+  <button class="dropbtn">Size</button>
+  <div class="dropdown-content">
+    <a href="#">Small</a>
+    <a href="#">Medium</a>
+    <a href="#">Large</a>
+    <a href="#">Extra Large</a>
+  </div>
+</div>
+
+
+<!-- quantity increase or decrease number 
+https://codepen.io/mtbroomell/pen/yNwwdv -->
+<h4>Quantity</h4>
+<form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>
+
+
+
+<!-- select colour/variation (if applicable) -->
 
 
 <!-- user can choose the amount of stars to rate it

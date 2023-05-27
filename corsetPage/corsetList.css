@@ -1,9 +1,10 @@
-ol, ul {
-	list-style: none;
+ul {
+	list-style-type: none;
+  text-decoration: none;
     margin: 0;
     padding: 0;
 }
-  nav > ul{
+  nav ul{
     display:flex;
     flex-direction: row; 
   }
@@ -98,62 +99,6 @@ nav ul ul{
   }
 
 
-
-
-
-/* image hover below */
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.media > img {
-    width: 100%;
-}
-
-.media {
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.layer {
-    background-color: white;
-    opacity: 0.8;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 90%;
-    transition: all 0.9s ease;
-}
-
-
-.media:hover .layer {
-    opacity: 0.8;
-    width: 90%;
-    transition: all 0.5s ease;
-}
-    
-.layer > p{
-    transform: scale(0);
-    transition: all 0.9s ease;
-}
-    
-.media:hover .layer > p {
-    transform: scale(1);
-    transition: all 0.9s ease;
-}   
 
 
 /* arrow button for taking back to top of page */
