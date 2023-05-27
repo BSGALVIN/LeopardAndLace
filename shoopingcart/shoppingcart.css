@@ -1,0 +1,152 @@
+#cartPopup {
+    position: fixed;
+    top: 20%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cartItem img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.itemDetails {
+    flex-grow: 1;
+}
+
+.cartActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cartButton {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkoutButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#closeButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* .root {
+    --heading-color: 13, 13, 13;
+    --text-color: 46, 46, 46;
+    --background: 255, 255, 255;
+    --secondary-background: 245, 245, 245;
+    --border-color: 224, 224, 224;
+    --border-color-darker: 171, 171, 171;
+    --success-color: 148, 140, 106;
+    --success-background: 234, 232, 225;
+    --error-color: 183, 100, 64;
+    --error-background: 250, 244, 242;
+    --primary-button-background: 0, 0, 0;
+    --primary-button-text-color: 255, 255, 255;
+    --secondary-button-background: 244, 239, 237;
+    --secondary-button-text-color: 46, 46, 46;
+    --product-star-rating: 13, 13, 13;
+    --product-on-sale-accent: 183, 100, 64;
+    --product-sold-out-accent: 91, 91, 91;
+    --product-custom-label-background: 5, 30, 56;
+    --product-custom-label-text-color: 255, 255, 255;
+    --product-custom-label-2-background: 216, 198, 190;
+    --product-custom-label-2-text-color: 0, 0, 0;
+    --product-low-stock-text-color: 222, 43, 43;
+    --product-in-stock-text-color: 216, 198, 190;
+    --loading-bar-background: 46, 46, 46;
+    --root-heading-color: 13, 13, 13;
+    --root-text-color: 46, 46, 46;
+    --root-background: 255, 255, 255;
+    --root-border-color: 224, 224, 224;
+    --root-primary-button-background: 0, 0, 0;
+    --root-primary-button-text-color: 255, 255, 255;
+    --base-font-size: 14px;
+    --heading-font-family: Garamond, Baskerville, Caslon, serif;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
+    --heading-text-transform: normal;
+    --text-font-family: "Avenir Next", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --text-font-bold-weight: 600;
+    --heading-xxsmall-font-size: 11px;
+    --heading-xsmall-font-size: 11px;
+    --heading-small-font-size: 12px;
+    --heading-large-font-size: 36px;
+    --heading-h1-font-size: 36px;
+    --heading-h2-font-size: 30px;
+    --heading-h3-font-size: 26px;
+    --heading-h4-font-size: 24px;
+    --heading-h5-font-size: 20px;
+    --heading-h6-font-size: 16px;
+    --button-border-radius: 0px;
+    --block-border-radius: 0px;
+    --block-border-radius-reduced: 0px;
+    --color-swatch-border-radius: 100%;
+    --button-height: 48px;
+    --button-small-height: 40px;
+    --form-input-field-height: 48px;
+    --form-input-gap: 16px;
+    --form-submit-margin: 24px;
+    --product-list-block-spacing: 32px;
+    --play-button-background: 255, 255, 255;
+    --play-button-arrow: 46, 46, 46;
+    --transform-logical-flip: 1;
+    --transform-origin-start: left;
+    --transform-origin-end: right;
+    --zoom-cursor-svg-url: url(//www.katthelabel.com/cdn/shop/t/110/assets/zoom-cursor.svg?v=1251080…);
+    --arrow-right-svg-url: url(//www.katthelabel.com/cdn/shop/t/110/assets/arrow-right.svg?v=3712558…);
+    --arrow-left-svg-url: url(//www.katthelabel.com/cdn/shop/t/110/assets/arrow-left.svg?v=7270401…);
+    --container-max-width: 1800px;
+    --container-gutter: 24px;
+    --container-max-width-minus-gutters: calc(var(--container-max-width) - (var(--container-gutter)) * 2);
+    --container-outer-width: max(calc((100vw - var(--container-max-width-minus-gutters)) / 2), var(--container-gutter));
+    --container-outer-margin: var(--container-outer-width);
+    --container-inner-width: calc(100vw - var(--container-outer-width) * 2);
+    --grid-column-count: 10;
+    --grid-gap: 24px;
+    --grid-column-width: calc((100vw - var(--container-outer-width) * 2 - var(--grid-gap) * (var(--grid-column-count) - 1)) / var(--grid-column-count));
+    --vertical-breather: 48px;
+    --vertical-breather-tight: 48px;
+    --payment-terms-background-color: #ffffff;
+} */
