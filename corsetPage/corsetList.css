@@ -1,19 +1,21 @@
-ul {
-	list-style-type: none;
-  text-decoration: none;
-    margin: 0;
-    padding: 0;
-}
-  nav ul{
-    display:flex;
-    flex-direction: row; 
+
+
+ nav ul{
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; ==> does not allow the items to be in a row I AM SO FRUSTRATED ARCEWHRJG */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: flex-start;
   }
 
   nav li{
-    border: 1px black solid;
-    padding: 0.5em 1em;
-    width: 7em;
-    background-color: #00536D;
+    /* border: 1px black solid; */
+    padding: 1em 1em;
+    width: 8em;
+    background-color: #170407;
     color: white;
     transform: translateX(-1em);
   }
@@ -24,13 +26,54 @@ nav ul ul{
     position: absolute;
     top:100%;
     transition: 0.3s;
-  }
+}
        
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
   nav li:hover ul{
     transform: scale(1,1);
     transition: 0.3s;
   }
     
+  nav li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #B74B4B;
+  }
+
+
+
+
+
+/* sort by */
+
+  .sort-container {
+    /* display: inline-block; */
+    align-items: right;
+    text-align: right;
+    justify-content: right;
+  }
+  
+  .sort-container label {
+    margin-right: 0.5em;
+  }
+  
+ .sort-container select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+
+
 /* product images */
 
 .Group-1 {
@@ -45,12 +88,10 @@ nav ul ul{
     padding-bottom: 10px;
 
   }
-  
   .product-card {
     padding:10px;
     margin-bottom:10px;
-}
-    
+}    
 .product-card > img{
     /* width:60%;
     justify-self: center; */
@@ -61,8 +102,7 @@ nav ul ul{
     max-width: 600px;
     width:100%;
 
-}
-    
+} 
 .Group-1 > .product-card {
     /* width:350px;
     max-width:350px; */
@@ -81,24 +121,30 @@ nav ul ul{
     display: inline-block;
     position: relative;
   }
-
   .product-image img {
     display: block;
     max-width: 100%;
   }
-
   .product-image .hover-image {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
   }
-
   .product-image:hover .hover-image {
     display: block;
   }
 
-
+.product-image .hoverFix {
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 90%;
+}
+.product-image:hover .hoverFix {
+  display: block;
+}
 
 
 /* arrow button for taking back to top of page */

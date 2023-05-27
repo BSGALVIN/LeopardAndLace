@@ -6,75 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="corsetList.css">
 
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-vvfHKJ0+jNA8BY5LdHmYwR2fR7Oosz6r4Ku9kyY8WQ/f6frv9hX7FAJhU6cIfMg3" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/star-half-stroke?f=classic&s=solid">
+
+    <script type="text/javascript" src="sortBy.js"></script>
+  
     <!-- links for the stars -->
     
     <script type="text/javascript" src="button.js"></script>
     <!-- link for js of arrow take to top of page button -->
 
-
     <title>Corsets</title>
 </head>
 <body>
 
-    
+
   <!-- https://www.w3schools.com/css/css_navbar.asp  -->
 
-  <h2>Dropdown menu</h2>
-
-    <nav>
-      <ul>
-        <li><a href="corsetList.html">Corsets</a></li>
-        <li><a href="lingerieList.html">Lingerie</a></li>
-        <li><a href="contact.asp">Burlesque</a></li>
-        <li><a href="about.asp">Costumes</a></li>
-        <li><a href="about.asp">Best Sellers</a></li>
-        <li><a href="about.asp">New Products</a></li>
-        <li><a href="about.asp">Sale Items</a></li>
-        <li><a href="about.asp">Other</a></li>
-      </ul>
-      </nav>
-
-
-<h2>drop down menu 2nd option for phone</h2>
 <!-- put in code that this menu appears when the site is for mobile (i swear there is an example of this code somewhere
   could be kat the label?) -->
 
-<nav>
+<nav class="container">
   <ul>
     <li>
-      Menu 
+      <div class="menuTag"><i class="fas fa-bars"></i></div> 
       <!-- (appears at the hamburger icon) -->
       <ul>
-        <li>Corsets</li>
-        <li>Lingerie</li>
+        <li><a href="corsetList.html">Corsets</a></li>
+        <li><a href="lingerieList.html">Lingerie</a></li>
+        <li><a href="">Burlesque</a></li>
+        <li><a href="">Costumes</a></li>
+        <li><a href="">Best Sellers</a></li>
+        <li><a href="">New Arrivals</a></li>
+        <li><a href="">Sale Items</a></li>
+        <li><a href="">Other</a></li>
         <!-- make horizonal not vertical -->
       </ul>
     </li>
+  </ul>
 </nav> 
+
+
+
+
+
+
+
 
 
 <header>
   <h1>Corsets</h1>
 </header>
 
+<div class="sort-container">
+  <label for="sort">Sort By:</label>
+  <select id="sort">
+    <option value="default">Featured</option>
+    <option value="name">Name</option>
+    <option value="price">Price</option>
+    <option value="date">Rating</option>
+  </select>
+</div>
+
+
+
 
 <section class="Group-1">
     <div class="product-card">
       <div class="product-image">
          <img src=" https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/12/01850-1.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
-        <img class="hover-image" src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/o_Satin-floral-lace-corset-N2061_24_1_283.jpg?fit=300%2C300&amp;ssl=1" alt="Hover Image">
+        <img class="hover-image" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/12/Purple-Brocade-Jacquard-Burlesque-Corset-Black-Ruffle-Trim-Standard-Plus-Size-b.jpg
+        " alt="Hover Image">
       </div>
       <div class="product-info">
         <h5>Purple Brocade Corset</h5>
         <h6>$47.00-49.00</h6>
         <div>
-          <span class="fa fa-star "></span>
-          <span class="fa fa-star "></span>
-          <span class="fa fa-star "></span>
-          <span class="fa-solid fa-star-half-stroke"></span>
-          <span class="fa fa-star"></span>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+          <i clas="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
         </div>
        
         <!-- <h7>product rating -- image of the star ratings? or another way to do it</h7> -->
@@ -82,71 +96,211 @@
       </div>
     </div>
     <div class="product-card">
-      <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/o_Satin-floral-lace-corset-N2061_24_1_283.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+      <div class="product-image">
+        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/o_Satin-floral-lace-corset-N2061_24_1_283.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+        <img class="hover-image" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Black-Brocade-Burlesque-Sweetheart-Corset-Ruffle_b-300x300.jpg"
+        alt="Hover Image">
+     </div>
       <div class="product-info">
         <h5>Black Brocade Corset</h5>
         <h6>$47.00-49.00</h6>
-        <h7>$250</h7>
+        <div>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+          <i clas="fa-regular fa-star"></i>
+        </div>
       </div>
     </div>
     <div class="product-card">
+      <div class="product-image">
         <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/12/Brown-Brocade-Underbust-Corset-Standard-Plus-Size.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+        <img class="hover-image" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/12/Brown-Brocade-Underbust-Corset-C144BR.jpg"
+        alt="Hover Image">
+     </div>
         <div class="product-info">
         <h5>Brown Brocade Corset</h5>
         <h6>$47.00-49.00</h6>
-        <!-- <h7rating in stars ;; import images or see how kat the label does it</h7> -->
+        <div>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
       </div>
     </div>
     <div class="product-card">
+      <div class="product-image">
         <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+        <img class="hover-image" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg"
+        alt="Hover Image">
+     </div>
         <div class="product-info">
           <h5>Pink Brocade Corset</h5>
           <h6>$47.00-49.00</h6>
-          <h7>$250</h7>
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+            <i clas="fa-regular fa-star"></i>
+          </div>
         </div>
-      </div>
-      <div class="product-card">
-        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/03/Brown-Brocade-Steampunk-Overbust-Steel-Boned-Corset-Embroidered-Front-Zipper.jpg?fit=300%2C302&amp;ssl=1" alt="Product Image">
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+          <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/03/Brown-Brocade-Steampunk-Overbust-Steel-Boned-Corset-Embroidered-Front-Zipper.jpg?fit=300%2C302&amp;ssl=1" alt="Product Image">
+          <img class="hoverFix" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/03/C139-Copy-300x340.jpg"
+          alt="Hover Image" >
+          <!-- different class for the hover image because the sizing was inconsistent with the other products -->
+       </div>
         <div class="product-info">
           <h5>Steampunk Brocade Corset</h5>
-          <h6>%28.80</h6>
-          <h7>$170</h7>
+          <h6>$28.80</h6>
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+            <i clas="fa-regular fa-star"></i>
+          </div>
         </div>
-      </div>
-      <div class="product-card">
-        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Blue-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim-Standard-Plus-Size.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+          <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Blue-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim-Standard-Plus-Size.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+          <img class="hover-image" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Blue-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg"
+          alt="Hover Image">
+       </div>
         <div class="product-info">
           <h5>Blue Brocade Corset</h5>
           <h6>$28.80</h6>
-          <h7>$250</h7>
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+            <i clas="fa-regular fa-star"></i>
+          </div>
         </div>
-      </div>
-      <div class="product-card">
+    </div>
+    <div class="product-card">
+        <div class="product-image">
           <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/12/Jade-Green-Jacquard-Burlesque-Corset.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+          <img class="hover-image" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/12/Jade-Green-Jacquard-Burlesque-Corset-2.jpg"
+          alt="Hover Image">
+       </div>
           <div class="product-info">
           <h5>Jade Green Corset</h5>
           <h6>$47.00-49.00</h6>
-          <!-- <h7rating in stars ;; import images or see how kat the label does it</h7> -->
-        </div>
-      </div>
-      <div class="product-card">
-          <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Purple-Embroidered-Lace-Flowers-Burlesque-Overbust-Corset-C140-Copy.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
-          <div class="product-info">
-            <h5>Lace Flowers Purple Corset</h5>
-            <h6>$30.40r</h6>
-            <h7>$250</h7>
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+            <i clas="fa-regular fa-star"></i>
           </div>
         </div>
-
-
-
-
-
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+          <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Purple-Embroidered-Lace-Flowers-Burlesque-Overbust-Corset-C140-Copy.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+          <img class="hover-image" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Purple-Embroidered-Lace-Flowers-Burlesque-Overbust-Corset-C140_2-300x300.jpg"
+          alt="Hover Image">
+       </div>
+          <div class="product-info">
+            <h5>Lace Flowers Purple Corset</h5>
+            <h6>$30.40</h6>
+            <div>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+              <i clas="fa-regular fa-star"></i>
+            </div>
+          </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/12/White-Jacquard-Corset.jpg?fit=1001%2C1001&ssl=1" alt="Product Image">
+        <img class="hover-image" src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/12/White-Jacquard-Corset-C141W.jpg?w=1001&ssl=1"
+        alt="Hover Image" >
+     </div>
+      <div class="product-info">
+        <h5>White Brocade Corset</h5>
+        <h6>$47.00-49.00</h6>
+        <div>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
+  </div>
+  <div class="product-card">
+      <div class="product-image">
+        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/03/Steampunk-Vintage-Black-Steel-Bone-Faux-Leather-Zipper-Overbust-Corset-Copy.jpg?fit=740%2C740&ssl=1" alt="Product Image">
+        <img class="hover-image" src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/03/Steampunk-Vintage-Black-Steel-Bone-Faux-Leather-Zipper-Overbust-Corset_b-Copy.jpg?fit=740%2C869&ssl=1"
+        alt="Hover Image">
+     </div>
+      <div class="product-info">
+        <h5>Faux Leather Silver Corset</h5>
+        <h6>$86.00-88.00</h6>
+        <div>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+          <i clas="fa-regular fa-star"></i>
+        </div>
+      </div>
+  </div>
+  <div class="product-card">
+      <div class="product-image">
+        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2021/09/purplesteampunkcorset.jpg?fit=740%2C740&ssl=1" alt="Product Image">
+        <img class="hoverFix" src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2021/09/purplesteampunkcorset._a.jpg?fit=740%2C740&ssl=1"
+        alt="Hover Image">
+     </div>
+        <div class="product-info">
+        <h5>Purple Chain Corset</h5>
+        <h6>$97.00</h6>
+        <div>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+        </div>
+      </div>
+  </div>
+  <div class="product-card">
+      <div class="product-image">
+        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2021/09/Red-Corset-C127R_b.jpg?resize=300%2C300&ssl=1" alt="Product Image">
+        <img class="hover-image" src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2021/09/Red-Corset-C127R_c.jpg?fit=600%2C600&ssl=1"
+        alt="Hover Image">
+     </div>
+        <div class="product-info">
+          <h5>Red Satin Corset</h5>
+          <h6>$46.00</h6>
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+            <i clas="fa-regular fa-star"></i>
+          </div>
+        </div>
+  </div>
   </section>
 
+  <!-- images are sized slightly differently and its because of the size of the image file and im so angry and tired and i aint dealing with that i already tried -->
 
 
-  
+
+
    
   
   
@@ -155,6 +309,8 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">
   <img src="/images/circle-arrow-up-solid.svg" alt="top">
 </button>
+<!-- make sticky; so its always at the bottom of screen no matter where you are on page -->
+
 
 </body>
 </html>

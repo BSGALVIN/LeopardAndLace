@@ -1,4 +1,60 @@
 /* https://www.w3schools.com/css/css_navbar_vertical.asp */
+
+
+nav{
+  display: flex;
+}
+
+ nav ul{
+    flex-direction: row; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  nav li{
+    /* border: 1px black solid; */
+    padding: 1em 1em;
+    width: 8em;
+    background-color: #170407;
+    color: white;
+    transform: translateX(-1em);
+  }
+
+nav ul ul{
+    transform: scale(1,0);
+    transform-origin: top center;
+    position: absolute;
+    top:100%;
+    transition: 0.3s;
+}
+       
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+  nav li:hover ul{
+    transform: scale(1,1);
+    transition: 0.3s;
+  }
+    
+  nav li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #B74B4B;
+  }
+
+
+
+
+  
+
 ul {
 	list-style-type: none;
     margin: 0;
