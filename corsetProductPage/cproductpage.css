@@ -1,10 +1,50 @@
+.product{
 
 
-.box {
-    inline-size: 350px;
-    overflow: hidden;
-    padding: 30px;
 }
+
+.product-image{
+ padding: 3em;
+}
+
+
+
+.product-info{
+  /* inline-size: 350px;
+    overflow: hidden;
+    padding: 30px;   */
+
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 2rem;
+
+}
+
+.product-info > * + * {
+    margin-top: 1rem;
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    flex-basis: 40rem;
+    flex-grow: 1;
+}
+
+.not-sidebar{
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
+}
+
+
+
+
+
 
 /* drop-down  */
 
@@ -50,6 +90,39 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+
+
+.sort-container {
+    /* display: inline-block; */
+    align-items: right;
+    text-align: right;
+    justify-content: right;
+    cursor: pointer;
+  }
+  
+  .sort-container label {
+    margin-right: 0.5em;
+  }
+  
+ .sort-container select {
+    /* padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px; */
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    cursor: pointer;
+    
+  }
+
+
+
 
 /* quantity increase/decrease */
 form {

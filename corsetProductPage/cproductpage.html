@@ -11,28 +11,34 @@
 
 </head>
 <body>
+
+
  <header>
     <h1>
         Pink Brocade Corset
     </h1>
  </header>   
 
-<section>
-    <!-- product image and information -->
-    <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
-    <div class="box">
+ <!-- wrap text -->
+
+<section class="product sidebar-container">
+    <div class="product-image not-sidebar">
+          <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+    </div>
+    <div class="product-info sidebar">
       <h4>$47.00-49.00</h4>
       <h5>DESCRIPTION</h5>
       <h6> Pink brocade burlesque sweetheart corset top with ruffle trim. Offered in standard & plus sizes. Gorgeous pink vintage style overbust corset top features esquisite jacquard fabric with ruffle trim.
         It has a satin look with bowknot ribbon at the front top of the corset & front busk closure. Soft boning & lace up back with privacy panel.
         'Pretty in Pink' this corset can lend itself to many themes & occasions including formal wear, burlesque, gothic, etc. Team up with a pair of jeans for a casual look or a long black skirt for formal wear.
       </h6>
-
+    </div>
 </section>
 <!-- hide/show sizing information and description -->
 
 <!-- drop down options: sizes 
 https://www.w3schools.com/css/css_dropdowns.asp -->
+
 <div class="dropdown">
   <button class="dropbtn">Size</button>
   <div class="dropdown-content">
@@ -42,6 +48,18 @@ https://www.w3schools.com/css/css_dropdowns.asp -->
     <a href="#">Extra Large</a>
   </div>
 </div>
+
+<div class="dropdown">
+  <label form="sort">Size:</label>
+  <select id="sort">
+    <option value="XS">Extra Small</option>
+    <option value="S">Small</option>
+    <option value="M">Medium</option>
+    <option value="L">Large</option>
+    <option value="XL">Extra Large</option>
+  </select>
+</div>
+
 
 
 <!-- quantity increase or decrease number 

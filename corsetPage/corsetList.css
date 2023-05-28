@@ -1,4 +1,30 @@
+/* general */
+header {
+position: relative;
+}
 
+h1{
+  font-size: 80px;
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+.categoryName{
+  position: relative;
+  padding-left: 30px;
+  z-index: 2;
+}
+
+.color-rectangle {
+  width: 400px;
+  height: 5px;
+  background-color: #8a7645;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* nav bar */
 
  nav ul{
   box-sizing: border-box;
@@ -10,7 +36,6 @@
   list-style-type: none;
   justify-content: flex-start;
   }
-
   nav li{
     /* border: 1px black solid; */
     padding: 1em 1em;
@@ -19,36 +44,29 @@
     color: white;
     transform: translateX(-1em);
   }
-
 nav ul ul{
     transform: scale(1,0);
     transform-origin: top center;
     position: absolute;
     top:100%;
     transition: 0.3s;
-}
-       
+}   
 nav li a{
   display: block;
   color: white;
   text-align: center;
   text-decoration: none;
 }
-
   nav li:hover ul{
     transform: scale(1,1);
     transition: 0.3s;
-  }
-    
+  } 
   nav li a:hover {
     background-color: #111;
   }
-
   .active {
     background-color: #B74B4B;
   }
-
-
 
 
 
@@ -77,9 +95,9 @@ nav li a{
 /* product images */
 
 .Group-1 {
-    /* display: flex;
+    display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* i actually have no idea what this means but have been told to use it so here goes::
@@ -97,10 +115,11 @@ nav li a{
     justify-self: center; */
 
     justify-self: end;
-
+position: relative;
     min-width: 200px;
     max-width: 600px;
     width:100%;
+    z-index: 3;
 
 } 
 .Group-1 > .product-card {
@@ -134,7 +153,6 @@ nav li a{
   .product-image:hover .hover-image {
     display: block;
   }
-
 .product-image .hoverFix {
   display: none;
     position: absolute;
@@ -145,7 +163,16 @@ nav li a{
 .product-image:hover .hoverFix {
   display: block;
 }
-
+.product-image .image-smaller{
+  max-width: 90%;
+}
+.column-align{
+  padding: 80px;
+  top:0;
+}
+.column-space{
+  padding-bottom: 100px;
+}
 
 /* arrow button for taking back to top of page */
 
@@ -166,7 +193,7 @@ nav li a{
 #myBtn {
 }
 
-#myBtn:hover {
+#Btn:hover {
 background-color: #555; /* Add a dark-grey background on hover */
 }
 
