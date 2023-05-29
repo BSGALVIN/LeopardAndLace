@@ -15,14 +15,13 @@ html, body {
 
 /* Columns */
 .left-column {
-    width: 50%;
+    width: 30%;
     position: relative;
-    padding: 50px;
+    padding: 80px;
     /* text-align:start;  this has the most power to move the image around evidently*/
   }
   .right-column {
     width: 50%;
-    margin-top: 50px;
     float: right;
     padding-right: 50px;
   }
@@ -30,8 +29,7 @@ html, body {
   /* Left Column */
   /* make it so the image is cenered in the column, not left aligned */
 .left-column img{
-    max-width: 100%;
-    margin-top: 150px;
+    max-width: 80%;
     position: absolute;
     opacity: 1;
     transition: all 0.3s ease;
@@ -41,6 +39,8 @@ html, body {
   }
 
 /* Product Description */
+
+
 .product-description {
     border-bottom: 1px solid #E1E8EE;
     margin-bottom: 20px;
@@ -66,13 +66,17 @@ html, body {
   }
 
 /* Product Color */
-.product-color {
-    margin-bottom: 30px;
-    text-align: left;
 
+.product-color {
+    /* margin-bottom: 30px; */
+    text-align: left;
+    padding: 10px;
   }
+
   .color-choose div {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
   }
   .color-choose input[type=radio] {
     display: none;
@@ -178,7 +182,7 @@ html, body {
   }
 
 /* responsiveness */
-@media (max-width: 940px) {
+/* @media (max-width: 940px) {
     .container {
       flex-direction: column;
       margin-top: 60px;
@@ -199,7 +203,7 @@ html, body {
       width: 220px;
       top: -85px;
     }
-  }
+  } */
 
 
 

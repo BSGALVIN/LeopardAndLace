@@ -1,16 +1,36 @@
+        // Get the radio buttons and image container
+        const radioButtons = document.querySelectorAll('input[type="radio"][name="image"]');
+        const imageContainer = document.getElementById('image-container');
+
+        // Add event listener to each radio button
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', function() {
+                // Get the selected value
+                const selectedValue = this.value;
+
+                // Update the image source
+                const image = imageContainer.querySelector('img');
+                image.src = selectedValue;
+            });
+        });
+
+
+
+
 //image switch
+//god help me
+
 $(document).ready(function() {
  
   $('.color-choose input').on('click', function() {
-      var headphonesColor = $(this).attr('data-image');
+      var image = $(this).attr('data-image');
  
       $('.active').removeClass('active');
-      $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
+      $('.left-column img[data-image = ' + image + ']').addClass('active');
       $(this).addClass('active');
   });
  
 });
-
 
 
 // quantity
