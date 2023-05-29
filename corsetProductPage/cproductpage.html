@@ -7,82 +7,115 @@
     <link rel="stylesheet" type="text/css" href="cproductpage.css">
     <title>Pink Brocade Corset</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-vvfHKJ0+jNA8BY5LdHmYwR2fR7Oosz6r4Ku9kyY8WQ/f6frv9hX7FAJhU6cIfMg3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script type="text/javascript" src="cproductpage.js"></script>
 
 </head>
 <body>
 
 
- <header>
-    <h1>
-        Pink Brocade Corset
-    </h1>
- </header>   
+<!-- left coloumn: images -->
+<div class="left-column">
+  <img data-image="front" src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+  <img data-image="back" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" alt="Product Image">
+  <img data-image="detail" class="active" src="images/red.png" alt="">
+</div>
 
- <!-- wrap text -->
-
-<section class="product sidebar-container">
-    <div class="product-image not-sidebar">
-          <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image">
+<div class="product-color">
+  <div class="color-choose">
+    <div>
+      <input data-image="front" type="radio" id="front" name="color" value="front" checked>
+      <label for="front"><span><img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1">
+      </span></label>
     </div>
-    <div class="product-info sidebar">
-      <h4>$47.00-49.00</h4>
-      <h5>DESCRIPTION</h5>
-      <h6> Pink brocade burlesque sweetheart corset top with ruffle trim. Offered in standard & plus sizes. Gorgeous pink vintage style overbust corset top features esquisite jacquard fabric with ruffle trim.
-        It has a satin look with bowknot ribbon at the front top of the corset & front busk closure. Soft boning & lace up back with privacy panel.
-        'Pretty in Pink' this corset can lend itself to many themes & occasions including formal wear, burlesque, gothic, etc. Team up with a pair of jeans for a casual look or a long black skirt for formal wear.
-      </h6>
+    <div>
+      <input data-image="back" type="radio" id="back" name="color" value="back">
+      <label for="back"><span>
+        <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" alt="Product Image">
+      </span></label>
     </div>
-</section>
-<!-- hide/show sizing information and description -->
-
-<!-- drop down options: sizes 
-https://www.w3schools.com/css/css_dropdowns.asp -->
-
-<div class="dropdown">
-  <button class="dropbtn">Size</button>
-  <div class="dropdown-content">
-    <a href="#">Small</a>
-    <a href="#">Medium</a>
-    <a href="#">Large</a>
-    <a href="#">Extra Large</a>
+    <div>
+      <input data-image="detail" type="radio" id="detail" name="color" value="detail">
+      <label for="detail"><span>
+        <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_c.jpg?fit=740%2C740&ssl=1">
+      </span></label>
+    </div>
   </div>
 </div>
 
-<div class="dropdown">
-  <label form="sort">Size:</label>
-  <select id="sort">
-    <option value="XS">Extra Small</option>
-    <option value="S">Small</option>
-    <option value="M">Medium</option>
-    <option value="L">Large</option>
-    <option value="XL">Extra Large</option>
-  </select>
-</div>
-
-
-
-<!-- quantity increase or decrease number 
-https://codepen.io/mtbroomell/pen/yNwwdv -->
-
-<form>
-  <h4>Quantity</h4>
-  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-  <input type="number" id="number" value="0" />
-  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-</form>
-
-
-
-<!-- select colour/variation (if applicable) -->
-
-
-<!-- user can choose the amount of stars to rate it
-    not necessary, i just happened to stumble upon the code for this and thought it was good 
-https://codepen.io/hesguru/pen/BaybqXv?editors=1100 -->
-<h5>Leave a rating</h5>
-
-<div class="rate">
+<!-- right column -->
+<div class="right-column">
+  <div class="product-description">
+    <span>Brocade Corset</span>
+    <h1>Pink Brocade Corset</h1>
+    <div>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa-solid fa-star-half"></i>
+      <i clas="fa-regular fa-star"></i>
+    </div>
+    <p>Pink brocade burlesque sweetheart corset top. The gorgeous vintage style overbust corset top features esquisite jacquard fabric with ruffle trim. It has a satin look with bowknot ribbon at the front top of the corset & front busk closure. 
+      Soft boning & lace up back with privacy panel.</p>
+      <br>
+  <!-- Product Configuration -->
+  <div class="product-configuration">
+    <div class="product-color">
+      <div class="color-choose">
+        <div>
+          <input data-image="front" type="radio" id="front" name="color" value="front" checked>
+          <label for="front"><span><img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1">
+          </span></label>
+        </div>
+        <div>
+          <input data-image="back" type="radio" id="back" name="color" value="back">
+          <label for="back"><span>
+            <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" alt="Product Image">
+          </span></label>
+        </div>
+        <div>
+          <input data-image="detail" type="radio" id="detail" name="color" value="detail">
+          <label for="detail"><span>
+           <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_c.jpg?fit=740%2C740&ssl=1">
+          </span></label>
+        </div>
+      </div>
+    </div>
+    <!-- size Configuration -->
+    <div class="size-config">
+      <span>Size</span>
+      <div class="size-choose">
+        <button>XS</button>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+      </div>
+      <a href="#">How our sizing works</a>
+    </div> 
+    <form>
+      <span>Quantity</span>
+      <br>
+      <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+      <input type="number" id="number" value="0" />
+     <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+    </form>
+  </div>
+  <br> 
+  <!-- Product Pricing -->
+  <div class="product-price">
+    <span>$47.00</span>
+    <a href="#" class="cart-btn">Add to cart</a>
+  </div>
+  <br>
+  <br>
+  <div class="giveRating">
+    <span>Leave a rating</span>
+  <br>
+  <div class="rate">
     <input type="radio" id="star5" name="rate" value="5" />
     <label for="star5" title="text">5 stars</label>
     <input type="radio" id="star4" name="rate" value="4" />
@@ -93,7 +126,17 @@ https://codepen.io/hesguru/pen/BaybqXv?editors=1100 -->
     <label for="star2" title="text">2 stars</label>
     <input type="radio" id="star1" name="rate" value="1" />
     <label for="star1" title="text">1 star</label>
+   </div>
   </div>
+</div>
+
+<br>
+
+<br>
+
+<footer>
+  
+</footer>
 
 </body>
 </html>
