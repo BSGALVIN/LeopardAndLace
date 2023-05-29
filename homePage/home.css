@@ -1,4 +1,5 @@
 /* if using imported font: @import url('urlhere') */
+/*mAKE HEADER FIXED POSITION*/
 
 nav {             
     height:100px;
@@ -124,8 +125,7 @@ nav {
   footer{
     height:30vh;
     width:100%;
-    background-color:black;
-    display:flex;
+    background-color:white;
   
   }
 
@@ -135,7 +135,36 @@ nav {
     not clumped and center */
   }
 
-  footer> div > img{
+  /* footer> div > img{
     width: 60px;
     height: 60px;
-  }
+  } */
+
+  {
+    box-sizing: border-box;
+}
+
+.column {
+float: left;
+padding: 30px;
+position: static;
+}
+
+/* Set width length for the left, right and middle columns */
+.left {
+ width: 20%;
+}
+
+.middle {
+ width: 50%;
+}
+
+.right {
+ width: 10%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
