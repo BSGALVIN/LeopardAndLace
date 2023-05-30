@@ -14,9 +14,6 @@
             });
         });
 
-
-
-
 //image switch
 //god help me
 
@@ -30,6 +27,25 @@ $(document).ready(function() {
       $(this).addClass('active');
   });
  
+});
+
+function change_image() {
+  var image = document.getElementById()
+}
+
+
+
+
+
+
+
+//added to cart popup
+document.getElementById("addCartButton").addEventListener("click", function() {
+  document.getElementById("addedToPopup").style.display = "block";
+});
+
+document.getElementById("closeButton").addEventListener("click", function() {
+  document.getElementById("addedToPopup").style.display = "none";
 });
 
 
