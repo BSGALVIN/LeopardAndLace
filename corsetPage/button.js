@@ -2,9 +2,6 @@
 // so it can be linked to all pages 
 // js file linked in corsetList.html header
 
-
-
-
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
