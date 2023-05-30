@@ -13,7 +13,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  border: 50px solid black;
+  border: 50px solid;
 }
 
 .fixed-header {
@@ -21,8 +21,30 @@
   top: 50px;
   left: 50px;
   right: 50px;
-  height: 100px;
-  background-color: antiquewhite;
+  height: 70px;
+  background-color: white;
+}
+
+img[alt~="menu"]{
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+img[alt~="bag"]{
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+img[alt~="profile"]{
+  width: 30px;
+  height: 30px;
+  padding-bottom: 20%;
+}
+
+.righticons {
+  float: right;
 }
 
 
@@ -55,19 +77,35 @@
     right: 30px;
   } */
 
+  .row1 {
+    display: flex;
+  }
+  
+  .column1 {
+    flex: 1;
+  }
+
+  img[alt~="staysexy"]{
+    width: 70%;
+    margin-top: 150px;
+    margin-left: 90px;
+    float: left;
+  }
+
+
   #bestsellersbanner .banner-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(bannerimage1.png);
+    background-image: url(/images/bannerimage1.png);
     min-width: 30%;
     height: 30vh;
     background-size: cover;
     background-position: center;
     padding: 20px;
     margin-bottom: 20px;
-    margin: 30px;
+    margin: 70px;
     border-radius: 20px;
   }
 
@@ -83,6 +121,7 @@
     font-weight: 800;
     font-size: 20px;
     padding-left: 10%;
+    -webkit-text-stroke: 0.5px rgb(19, 16, 39);
   }
 
   #salebanner .banner-box{
@@ -90,15 +129,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(bannerimage1.png);
+    background-image: url(/images/saleimage.png);
     min-width: 30%;
+    width: 100%;
     height: 30vh;
     background-size: cover;
     background-position: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin: 30px;
-    border-radius: 20px;
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  #salebanner h1{
+    color: maroon;
+    font-weight: 900;
+    font-size: 6vw;
+    -webkit-text-stroke: 2px maroon;
+    float: top;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* padding-bottom: 10%; */
+  }
+
+  #salebanner h2{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 2vw;
+    padding-top: 0;
+    padding-bottom: 10%;
+    text-align: right;
+    margin-left: 70%;
+    -webkit-text-stroke: 0.5px rgb(19, 16, 39);
   }
 
   #newarrivalsbanner .banner-box{
@@ -113,8 +173,9 @@
     background-position: center;
     padding: 20px;
     margin-bottom: 20px;
-    margin: 30px;
+    margin: 70px;
     border-radius: 20px;
+    margin-top: 160px;
   }
 
   #newsletter{
@@ -172,6 +233,7 @@
     outline: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    float: right;
   }
 
   #newsletter .form{
@@ -197,18 +259,17 @@
     height: 60px;
   } */
 
-  {
-    box-sizing: border-box;
-}
+ 
 
 .column {
 float: left;
 padding: 30px;
 position: static;
+margin-right: 30px;
 }
 
 /* Set width length for the left, right and middle columns */
-.left {
+/* .left {
  width: 20%;
 }
 
@@ -218,10 +279,25 @@ position: static;
 
 .right {
  width: 10%;
+} */
+
+.row {
+  display: flex;
 }
 
 .row:after {
 content: "";
 display: table;
 clear: both;
+}
+
+.column_new {
+  flex: 1;
+  padding: 3px;
+}
+
+.column_small {
+  flex: 0;
+  padding: 3px;
+  margin-right: 10px;
 }
