@@ -1,13 +1,38 @@
 /* if using imported font: @import url('urlhere') */
 /*mAKE HEADER FIXED POSITION*/
 
-nav {             
-    height:100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* html {
+  border: 50px solid black;
+  bottom: 0px;
+  z-index: 0;
+} */
+
+.border {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 50px solid black;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+
+
+/* nav {             
+    height:10%;
+    top:100px;
+    left:100px;
+    top: 100px;
+    position: fixed;
+    background-color: antiquewhite;
   }
   
   nav > h1{      
@@ -20,15 +45,15 @@ nav {
   }
   
   nav > div{        
-    height:60px;
-    width: 160px;
    display:flex;
    justify-content:space-between;
   }
   
+  
   nav > div > img{ 
     height:60px;
-  }
+    right: 30px;
+  } */
 
   #bestsellersbanner .banner-box{
     display: flex;
@@ -58,6 +83,38 @@ nav {
     font-weight: 800;
     font-size: 20px;
     padding-left: 10%;
+  }
+
+  #salebanner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(bannerimage1.png);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 30px;
+    border-radius: 20px;
+  }
+
+  #newarrivalsbanner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(bannerimage1.png);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 30px;
+    border-radius: 20px;
   }
 
   #newsletter{
