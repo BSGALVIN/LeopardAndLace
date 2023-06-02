@@ -35,9 +35,28 @@
 
       <div class="righticons">
         <img src="/images/user-solid.svg" alt="profile">
-        <img src="/images/bag-shopping-solid.svg" alt="bag">
+        <button id="cartButton"> <img src="/images/bag-shopping-solid.svg" alt="bag"> </button>
       </div>
   </header>
+
+  <!-- <button id="cartButton">Open Cart</button> -->
+
+  <div id="cartPopup">
+      <div class="cartItem">
+          <img src="item-image.jpg" alt="Item Image">
+          <div class="itemDetails">
+              <h3>Item Name</h3>
+              <p>Price: $19.99</p>
+          </div>
+      </div>
+      <div class="cartActions">
+          <button id="checkoutButton">Checkout</button>
+          <button id="closeButton">Close</button>
+      </div>
+  </div>
+
+  <script src="homepage.js"></script>
+
 
   <div class="row1">
     <div class="column1">
