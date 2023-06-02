@@ -6,3 +6,5 @@
 //     document.getElementById("cartPopup").style.display = "none";
 // });
 
+/* cart items */
+

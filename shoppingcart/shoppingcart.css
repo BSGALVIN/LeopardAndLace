@@ -1,3 +1,81 @@
+/* cart items */
+
+.border {
+    position: fixed;
+    border: 50px solid transparent;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-image: url(/images/leopardborder.png) 90 stretch;
+    border-image-repeat: initial;
+  } 
+
+
+html {
+    margin: 10%;
+}
+
+.cart-page{
+    margin: 20px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #b2a694;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #b2a694;
+    font-size: 12px;
+}
+
+td img{
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #b2a694;
+    width: 100%;
+    max-width: 340px;
+}
+
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+
 /* #cartPopup {
     position: fixed;
     top: 20%;
