@@ -1,41 +1,37 @@
-        // Get the radio buttons and image container
-        const radioButtons = document.querySelectorAll('input[type="radio"][name="image"]');
-        const imageContainer = document.getElementById('image-container');
+function changeFormula(e){
+  e.stopPropagation();  
+  var radio = document.getElementsByName('view');
+  var image = document.getElementsByName('big-img')
+  if (radio[1].checked){
+    image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
+    image.opacity = 1;
+  }
+  if (radio[2].checked){
+    image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg";
+    image.opacity = 1;
+  }
+  if (radio[3].checked){
+    image.src = "formula_none.gif";
+    image.opacity = 1;
+  }
+  else {
+    image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
+    image.opacity = 1;
+  }
 
-        // Add event listener to each radio button
-        radioButtons.forEach(radioButton => {
-            radioButton.addEventListener('change', function() {
-                // Get the selected value
-                const selectedValue = this.value;
+//make element with name="big-img" = a new image src based on what image is pressed
+// the default it the one in the html code ==> only one instead of three is listed there
 
-                // Update the image source
-                const image = imageContainer.querySelector('img');
-                image.src = selectedValue;
-            });
-        });
-
-//image switch
-//god help me
-
-$(document).ready(function() {
- 
-  $('.color-choose input').on('click', function() {
-      var image = $(this).attr('data-image');
- 
-      $('.active').removeClass('active');
-      $('.left-column img[data-image = ' + image + ']').addClass('active');
-      $(this).addClass('active');
-  });
- 
-});
-
-function change_image() {
-  var image = document.getElementById()
+  if (radio[1].checked){
+      formula.src = "formula_gdp.gif";
+  }
+  if (radio[2].checked){
+      formula.src = "formula_pop.gif";
+  }
+  if (radio[3].checked){
+      formula.src = "formula_none.gif";
+  }
 }
-
-
-
-
 
 
 

@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
+    /* however wide the border is that we will add to the page */
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
   .container {
@@ -14,26 +15,45 @@ html, body {
 
 
 /* Columns */
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.row{
+  display: flex;
+}
+
 .left-column {
-    width: 30%;
-    position: relative;
-    padding: 80px;
-    /* text-align:start;  this has the most power to move the image around evidently*/
+  flex: 1.2;
+}
+
+.right-column {
+  flex: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
-  .right-column {
-    width: 50%;
-    float: right;
-    padding-right: 50px;
-  }
+}
 
   /* Left Column */
   /* make it so the image is cenered in the column, not left aligned */
 .left-column img{
-    max-width: 80%;
-    position: absolute;
+    max-width: 100%;
+    position: relative;
     opacity: 1;
     transition: all 0.3s ease;
+
+
+    top: 150px;
   }
+
+ .left-column .big-img{
+  position: absolute;
+  /* opacity: 0; */
+  /* move it center-- can do px but its not responsive; the percentages move it substantially */
+  left: 10%;
+  /* MAKE IT MOVE TO THE RIGHT OR CENTER OF THIS COLUMN OH LORD */
+  }
+
   .left-column img.active {
     opacity: 1;
   }
@@ -78,6 +98,9 @@ html, body {
     flex-direction: column;
     padding: 5px;
   }
+
+
+
   .color-choose input[type=radio] {
     display: none;
   }
@@ -110,6 +133,8 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+
 
 
 /* size Configuration */
@@ -180,31 +205,6 @@ html, body {
   .cart-btn:hover {
     background-color: #64af3d;
   }
-
-/* responsiveness */
-/* @media (max-width: 940px) {
-    .container {
-      flex-direction: column;
-      margin-top: 60px;
-    }
-    .left-column,
-    .right-column {
-      width: 100%;
-    }
-    .left-column img {
-      width: 300px;
-      right: 0;
-      top: -65px;
-      left: initial;
-    }
-  }
-  @media (max-width: 535px) {
-    .left-column img {
-      width: 220px;
-      top: -85px;
-    }
-  } */
-
 
 
 /* quantity increase/decrease */

@@ -197,10 +197,7 @@
     height: 60px;
   } */
 
-  {
-    box-sizing: border-box;
-}
-
+  
 .column {
 float: left;
 padding: 30px;

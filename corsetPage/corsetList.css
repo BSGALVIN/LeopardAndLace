@@ -1,5 +1,7 @@
 /* general */
-
+html{
+  padding: 30px;
+}
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -7,24 +9,19 @@ body {
   padding: 10;
 }
 
-/* to top button */
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  text-align: right; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+#toTopBtn{
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  width: 20%;
+  height: 20%;
+  text-align: right;
+  float: right;
 }
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+
+#toTopBtn img{
+ width: 20%;
+ height: 20%;
 }
 
 
@@ -43,51 +40,14 @@ h1{
 }
 
 
-
-/* nav bar */
-
- nav ul{
-  box-sizing: border-box;
-  display:flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; ==> does not allow the items to be in a row I AM SO FRUSTRATED ARCEWHRJG */
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  justify-content: flex-start;
-  }
-  nav li{
-    /* border: 1px black solid; */
-    padding: 1em 1em;
-    width: 8em;
-    background-color: #170407;
-    color: white;
-    transform: translateX(-1em);
-  }
-nav ul ul{
-    transform: scale(1,0);
-    transform-origin: top center;
-    position: absolute;
-    top:100%;
-    transition: 0.3s;
-}   
-nav li a{
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
+h5{
+  font-weight: normal;
+  font-size: 18px;
 }
-  nav li:hover ul{
-    transform: scale(1,1);
-    transition: 0.3s;
-  } 
-  nav li a:hover {
-    background-color: #111;
-  }
-  .active {
-    background-color: #B74B4B;
-  }
 
+h6{
+  font-size: 12px;
+}
 
 
 /* sort by */
@@ -115,7 +75,7 @@ label{
  .sort-container select {
     padding: 0.5em;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0px;
   }
 
 
@@ -200,8 +160,3 @@ position: relative;
   top:0;
 }
 
-
-/* button > img{ 
-  height:60px;
-  width: 60px;
-} */
