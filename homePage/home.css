@@ -9,65 +9,154 @@
 
 .border {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  border: 50px solid black;
-}
+  border: 50px solid transparent;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-image: url("https://previews.123rf.com/images/appstock/appstock1903/appstock190300026/119842821-leopard-fur-texture-real-fur.jpg") 10% round;
+} 
 
 .fixed-header {
   position: fixed;
   top: 50px;
   left: 50px;
   right: 50px;
-  height: 100px;
-  background-color: antiquewhite;
+  height: 70px;
+  background-color: white;
+}
+
+img[alt~="menu"]{
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+img[alt~="bag"]{
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+img[alt~="profile"]{
+  width: 30px;
+  height: 30px;
+  padding-bottom: 20%;
+}
+
+.righticons {
+  float: right;
 }
 
 
-/* nav {             
-    height:10%;
-    top:100px;
-    left:100px;
-    top: 100px;
-    position: fixed;
-    background-color: antiquewhite;
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+/* nav bar */
+nav ul{
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; ==> does not allow the items to be in a row I AM SO FRUSTRATED ARCEWHRJG */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: flex-start;
+  }
+  nav li{
+    /* border: 1px black solid; */
+    padding: 1em 1em;
+    width: 8em;
+    background-color: #170407;
+    color: white;
+    transform: translateX(-1em);
+  }
+nav ul ul{
+    transform: scale(1,0);
+    transform-origin: top center;
+    position: absolute;
+    top:100%;
+    transition: 0.3s;
+}   
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+  nav li:hover ul{
+    transform: scale(1,1);
+    transition: 0.3s;
+  } 
+  nav li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #B74B4B;
+  }
+
+  ul {
+	  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   width: 100%;
+}     
+li {
+    float: left;
+  }
+ li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #B74B4B;
+  }
+
+
+
+  .row1 {
+    display: flex;
   }
   
-  nav > h1{      
-    width:160px;
-    font-size: 60px;
+  .column1 {
+    flex: 1;
   }
-  
-  nav > img{      
-    width: 20px;
+
+  img[alt~="staysexy"]{
+    width: 70%;
+    margin-top: 150px;
+    margin-left: 90px;
+    float: left;
   }
-  
-  nav > div{        
-   display:flex;
-   justify-content:space-between;
-  }
-  
-  
-  nav > div > img{ 
-    height:60px;
-    right: 30px;
-  } */
+
 
   #bestsellersbanner .banner-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(bannerimage1.png);
+    background-image: url(/images/bannerimage1.png);
     min-width: 30%;
     height: 30vh;
     background-size: cover;
     background-position: center;
     padding: 20px;
     margin-bottom: 20px;
-    margin: 30px;
+    margin: 70px;
     border-radius: 20px;
   }
 
@@ -83,6 +172,7 @@
     font-weight: 800;
     font-size: 20px;
     padding-left: 10%;
+    -webkit-text-stroke: 0.5px rgb(19, 16, 39);
   }
 
   #salebanner .banner-box{
@@ -90,15 +180,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(bannerimage1.png);
+    background-image: url(/images/saleimage.png);
     min-width: 30%;
+    width: 100%;
     height: 30vh;
     background-size: cover;
     background-position: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin: 30px;
-    border-radius: 20px;
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  #salebanner h1{
+    color: maroon;
+    font-weight: 900;
+    font-size: 6vw;
+    -webkit-text-stroke: 2px maroon;
+    float: top;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* padding-bottom: 10%; */
+  }
+
+  #salebanner h2{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 2vw;
+    padding-top: 0;
+    padding-bottom: 10%;
+    text-align: right;
+    margin-left: 70%;
+    -webkit-text-stroke: 0.5px rgb(19, 16, 39);
   }
 
   #newarrivalsbanner .banner-box{
@@ -113,8 +224,9 @@
     background-position: center;
     padding: 20px;
     margin-bottom: 20px;
-    margin: 30px;
+    margin: 70px;
     border-radius: 20px;
+    margin-top: 160px;
   }
 
   #newsletter{
@@ -172,6 +284,7 @@
     outline: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    float: right;
   }
 
   #newsletter .form{
@@ -197,15 +310,21 @@
     height: 60px;
   } */
 
+<<<<<<< HEAD
   
+=======
+ 
+
+>>>>>>> b6750ab35e89fe3229f3298ed870b7cd51762d83
 .column {
 float: left;
 padding: 30px;
 position: static;
+margin-right: 30px;
 }
 
 /* Set width length for the left, right and middle columns */
-.left {
+/* .left {
  width: 20%;
 }
 
@@ -215,10 +334,25 @@ position: static;
 
 .right {
  width: 10%;
+} */
+
+.row {
+  display: flex;
 }
 
 .row:after {
 content: "";
 display: table;
 clear: both;
+}
+
+.column_new {
+  flex: 1;
+  padding: 3px;
+}
+
+.column_small {
+  flex: 0;
+  padding: 3px;
+  margin-right: 10px;
 }
