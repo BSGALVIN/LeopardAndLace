@@ -14,7 +14,8 @@
   top: 0;
   right: 0;
   bottom: 0;
-  border-image: url("https://previews.123rf.com/images/appstock/appstock1903/appstock190300026/119842821-leopard-fur-texture-real-fur.jpg") 10% round;
+  border-image: url(/images/leopardborder.png) 10% round;
+  border-image-repeat: initial;
 } 
 
 .fixed-header {
@@ -310,12 +311,9 @@ li a:hover {
     height: 60px;
   } */
 
-<<<<<<< HEAD
   
-=======
  
 
->>>>>>> b6750ab35e89fe3229f3298ed870b7cd51762d83
 .column {
 float: left;
 padding: 30px;
