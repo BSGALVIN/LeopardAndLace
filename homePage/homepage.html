@@ -14,6 +14,7 @@
   <header class="fixed-header">
     <nav>    
       <ul>
+      
         <li>
         <div class="menuTag"><img src="/images/bars-solid (1).svg" alt="menu"></i></div> 
         <!-- (appears at the hamburger icon) -->
@@ -31,12 +32,12 @@
         </li>
       </ul>
     </nav>
+    <div class="righticons">
+      <img src="/images/user-solid.svg" alt="profile">
+      <button id="cartButton"> <img src="/images/bag-shopping-solid.svg" alt="bag"> </button>
+    </div>
+  
 
-
-      <div class="righticons">
-        <img src="/images/user-solid.svg" alt="profile">
-        <button id="cartButton"> <img src="/images/bag-shopping-solid.svg" alt="bag"> </button>
-      </div>
   </header>
 
   <!-- <button id="cartButton">Open Cart</button> -->
@@ -50,7 +51,7 @@
           </div>
       </div>
       <div class="cartActions">
-          <button id="checkoutButton">Checkout</button>
+          <a href="http://127.0.0.1:5501/shoppingcart/shoppingcart.html"><button id="checkoutButton">Checkout</button></a>
           <button id="closeButton">Close</button>
       </div>
   </div>
@@ -65,8 +66,7 @@
     <div class="column1">
       <section id="newarrivalsbanner">
         <div class="banner-box">
-          <h1>New Arrivals</h1>
-          <h2>SHOP NOW</h2>
+          <a href=""><img src="/images/newarrivals.png" alt="newarrivals"></a>
         </div>
       </div>
       </section>
@@ -91,7 +91,7 @@
       <section id="salebanner">
         <div class="banner-box">
           <h1>SALE SALE SALE SALE SALE</h1>
-          <h2>Lingerie Sale 20% Off!</h2>
+          <!-- <h2>Lingerie Sale 20% Off!</h2> -->
         </div>
       </section>
 
