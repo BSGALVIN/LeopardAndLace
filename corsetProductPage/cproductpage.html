@@ -18,9 +18,10 @@
 
   <script>
     function changeImage(){
-  var radio = document.getElementsByName('view');
-  var image = document.getElementsByName('big-img')
-  if (radio[1].checked){
+  var radio = document.getElementsByName('view'); //make this correct
+  var image = document.getElementsByName('big-img'); //check this too
+  // check these - that they are working
+  if (radio[1].checked){ // check what the '1' is: if it needs to be smth else instead
     image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
     image.opacity = 1;
   }
@@ -47,18 +48,18 @@
     <div class="product-color">
       <div class="color-choose">  
   <div>
-    <input data-image="front" type="radio" id="front" name="view" value="front" onclick="changeImage" checked>
+    <input data-image="front" type="radio" id="front" name="view" value="front" onclick="changeImage()" checked>
     <label for="front"><span><img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1">
     </span></label>
   </div>
   <div>
-    <input data-image="back" type="radio" id="back" name="view" value="back" onclick="changeImage">
+    <input data-image="back" type="radio" id="back" name="view" value="back" onclick="changeImage()">
     <label for="back"><span>
       <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" alt="Product Image">
     </span></label>
   </div>
   <div>
-    <input data-image="detail" type="radio" id="detail" name="view" value="detail" onclick="changeImage">
+    <input data-image="detail" type="radio" id="detail" name="view" value="detail" onclick="changeImage()">
     <label for="detail"><span>
       <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_c.jpg?fit=740%2C740&ssl=1">
     </span></label>

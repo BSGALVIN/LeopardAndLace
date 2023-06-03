@@ -1,4 +1,4 @@
-function changeFormula(e){
+function changeImage(e){
   e.stopPropagation();  
   var radio = document.getElementsByName('view');
   var image = document.getElementsByName('big-img')

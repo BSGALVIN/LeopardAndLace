@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lproduct.css">
+    <title>Leopard Lingerie Set</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-vvfHKJ0+jNA8BY5LdHmYwR2fR7Oosz6r4Ku9kyY8WQ/f6frv9hX7FAJhU6cIfMg3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="lproduct.js"></script>
+
+</head>
+<body>
+
+  <script>
+    function changeImage(){
+  var radio = document.getElementsByName('view');
+  var image = document.getElementsByName('big-img')
+  if (radio[1].checked){
+    image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters.jpg";
+    image.opacity = 1;
+  }
+  if (radio[2].checked){
+    image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters-B112-100x100.jpg";
+    image.opacity = 1;
+  }
+  if (radio[3].checked){
+    image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/03/B112_C-100x100.jpg";
+    image.opacity = 1;
+  }
+  else {
+    image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters.jpg";
+    image.opacity = 1;
+  }
+}
+  </script>
+        
+<div class="row">
+  <div class="column left-column">
+    <img class="big-img" data-image="front" name="big-img" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters.jpg" alt="Product Image">
+    <!-- <img class="big-img" data-image="back" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" alt="Product Image">
+    <img class="big-img" data-image="detail" class="active" src="images/red.png" alt=""> -->
+    <div class="product-color">
+      <div class="color-choose">  
+  <div>
+    <input data-image="front" type="radio" id="front" name="view" value="front" onclick="changeImage" checked>
+    <label for="front"><span><img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters.jpg">
+    </span></label>
+  </div>
+  <div>
+    <input data-image="back" type="radio" id="back" name="view" value="back" onclick="changeImage">
+    <label for="back"><span>
+      <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters-B112-100x100.jpg" alt="Product Image">
+    </span></label>
+  </div>
+  <div>
+    <input data-image="detail" type="radio" id="detail" name="view" value="detail" onclick="changeImage">
+    <label for="detail"><span>
+      <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/03/B112_C-100x100.jpg">
+    </span></label>
+  </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="column right-column">
+    <div class="product-description">
+      <span>Lingerie Set</span>
+      <h1>Leopard Lingerie Set</h1>
+      <div>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i> 
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>Leopard lingerie set with adjustable neck collar & garters. Has colour block design with mesh splicing lingerie. Comes with attached garter straps & matching g-string.</p>
+        <br>
+    <!-- Product Configuration -->
+    <div class="product-configuration">
+      <!-- size Configuration -->
+      <div class="size-config">
+        <span>Size</span>
+        <div class="size-choose">
+          <button>XS</button>
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <a href="#">How our sizing works</a>
+      </div> 
+      <form>
+        <span>Quantity</span>
+        <br>
+        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+        <input type="number" id="number" value="0" />
+       <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+      </form>
+    </div>
+    <br> 
+    <!-- Product Pricing -->
+    <div class="product-price">
+      <span>$31.20</span>
+      <a href="#" class="cart-btn">Add to cart</a>
+    </div>
+    <br>
+    <br>
+    <div class="giveRating">
+      <span>Leave a rating</span>
+    <br>
+    <div class="rate">
+      <input type="radio" id="star5" name="rate" value="5" />
+      <label for="star5" title="text">5 stars</label>
+      <input type="radio" id="star4" name="rate" value="4" />
+      <label for="star4" title="text">4 stars</label>
+      <input type="radio" id="star3" name="rate" value="3" />
+      <label for="star3" title="text">3 stars</label>
+      <input type="radio" id="star2" name="rate" value="2" />
+      <label for="star2" title="text">2 stars</label>
+      <input type="radio" id="star1" name="rate" value="1" />
+      <label for="star1" title="text">1 star</label>
+     </div>
+    </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+<div id="addedToPopup">
+  <div class="cartItem">
+      <h2>Added to Cart!</h2>
+  </div>
+  <div class="cartActions">
+      <button id="checkoutButton"><a href=shoppingcart.html>View Cart</a></button>
+      <button id="closeButton">Continue Shopping</button>
+  </div>
+</div>
+
+<!-- a href=cart page -->
+
+
+<br>
+
+<br>
+
+<footer>
+  
+</footer>
+
+</body>
+</html>

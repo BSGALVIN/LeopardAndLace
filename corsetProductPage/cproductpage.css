@@ -48,6 +48,7 @@ html, body {
 
  .left-column .big-img{
   position: absolute;
+  max-width: 50%;
   /* opacity: 0; */
   /* move it center-- can do px but its not responsive; the percentages move it substantially */
   left: 10%;
