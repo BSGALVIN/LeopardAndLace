@@ -1,23 +1,23 @@
-function changeImage(e){
-  e.stopPropagation();  
-  var radio = document.getElementsByName('view');
-  var image = document.getElementsByName('big-img')
-  if (radio[1].checked){
-    image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
-    image.opacity = 1;
-  }
-  if (radio[2].checked){
-    image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg";
-    image.opacity = 1;
-  }
-  if (radio[3].checked){
-    image.src = "formula_none.gif";
-    image.opacity = 1;
-  }
-  else {
-    image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
-    image.opacity = 1;
-  }
+// function changeImage(e){
+//   e.stopPropagation();  
+//   var radio = document.getElementsByName('view');
+//   var image = document.getElementsByName('big-img')
+//   if (radio[1].checked){
+//     image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
+//     image.opacity = 1;
+//   }
+//   if (radio[2].checked){
+//     image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg";
+//     image.opacity = 1;
+//   }
+//   if (radio[3].checked){
+//     image.src = "formula_none.gif";
+//     image.opacity = 1;
+//   }
+//   else {
+//     image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
+//     image.opacity = 1;
+//   }
 
 //make element with name="big-img" = a new image src based on what image is pressed
 // the default it the one in the html code ==> only one instead of three is listed there

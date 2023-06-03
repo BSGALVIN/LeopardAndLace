@@ -1,5 +1,8 @@
 // note none of this is my code whoops ==> so i wouldn't necessarily be able to describe this yoikes
 //we can figure that out later
+//fix all this or cut it because its not really doing anything rn
+//im serious
+//gonna keep commenting stuff so it is noticed before submission
 
  // Function to calculate and update the total price
 function updateTotal() {

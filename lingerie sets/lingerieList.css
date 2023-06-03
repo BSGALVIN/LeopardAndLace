@@ -82,7 +82,7 @@ html{
       padding-bottom: 10px;
     }
 
-    @media screen and (min-width: 360px){
+    @media screen and (min-width: 1130px){
       h1{
         font-size: 80px;
       }
