@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store Checkout</title>
+        <link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+  <div class="checkout-container">
+          <div class="checkout-left">
+            <h2>Express Checkout</h2>
+            <div class="payment-methods">
+              <button class="payment-button">PayPal</button>
+              <button class="payment-button">Google Pay</button>
+              <button class="payment-button">Shop Pay</button>
+              <button class="payment-button">Visa</button>
+            </div>
+            
+            <h2>Shipping Address</h2>
+            <form>
+              <label for="nameInput">Name:</label>
+              <input type="text" id="nameInput" required>
+              
+              <label for="addressInput">Address:</label>
+              <input type="text" id="addressInput" required>
+              
+              <label for="cityInput">City:</label>
+              <input type="text" id="cityInput" required>
+              
+              <label for="zipInput">ZIP Code:</label>
+              <input type="text" id="zipInput" required>
+              
+              <label for="countryInput">Country:</label>
+              <input type="text" id="countryInput" required>
+            </form>
+          </div>
+          
+          <div class="checkout-right">
+            <h2>Order Summary</h2>
+            <div class="product">
+              <img src="product1.jpg" alt="Product 1">
+              <div class="product-details">
+                <h3>Product 1</h3>
+                <p>Price: $49.99</p>
+              </div>
+            </div>
+            
+            <div class="product">
+              <img src="product2.jpg" alt="Product 2">
+              <div class="product-details">
+                <h3>Product 2</h3>
+                <p>Price: $39.99</p>
+              </div>
+            </div>
+            
+            <div class="total">
+              <p>Shipping: $5.00</p>
+              <h3>Total: $94.98</h3>
+            </div>
+            
+            <button class="confirm-button">Confirm Order</button>
+          </div>
+        </div>
+</body>
+</html>
+
+</body>
+</html>
