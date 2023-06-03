@@ -1,0 +1,100 @@
+html{
+    padding: 30px;
+  }
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 10;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  .checkout-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .checkout-right {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .payment-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-right .product {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-right .product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .checkout-right .product-details h3 {
+    margin-top: 0;
+  }
+  
+  .checkout-right .total {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .checkout-right .confirm-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
