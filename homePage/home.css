@@ -23,7 +23,7 @@
   top: 50px;
   left: 50px;
   right: 50px;
-  height: 90px;
+  height: 75px;
   background-color: white;
 }
 
@@ -117,7 +117,8 @@ img[alt~="profile"]{
 .righticons {
   float: right;
   z-index: 10;
-  
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 
