@@ -9,15 +9,7 @@ html{
     padding: 10;
   }
   
-  #toTopBtn{
-    border: none;
-    cursor: pointer;
-    background-color: white;
-    width: 20%;
-    height: 20%;
-    text-align: right;
-    float: right;
-  }
+
   
   #toTopBtn img{
    width: 20%;
@@ -40,10 +32,7 @@ html{
   }
   
   
-  h5{
-    font-weight: normal;
-    font-size: 18px;
-  }
+
   
   h6{
     font-size: 12px;
@@ -54,7 +43,8 @@ html{
   
   label{
     font-size: 12px;
-    color: #358ED7;
+    color: #b2a694;
+    font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
@@ -82,19 +72,67 @@ html{
   
   
   /* product images */
-  
+
   .Group-1 {
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      /* i actually have no idea what this means but have been told to use it so here goes::
-      grid-template-areas: "productImg productDescription" */
-  
       padding-bottom: 10px;
-  
     }
+
+    @media screen and (min-width: 360px){
+      h1{
+        font-size: 80px;
+      }
+      h5{
+        font-weight: normal;
+        font-size: 18px;
+      }
+   .Group-1 img{
+      width: 250px;
+      height: 400px;
+    }
+    #toTopBtn{
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      width: 20%;
+      height: 20%;
+      text-align: right;
+      float: right;
+    }
+    }
+  
+
+
+    @media screen and (max-width: 360px){
+      h1{
+        font-size: 50px;
+      }
+      h5{
+        font-weight: normal;
+        font-size: 15px;
+      }
+      .Group-1{
+        grid-template-columns: 1fr 1fr;
+      }
+      .Group-1 img{
+        width: 100px;
+        height: 175px;
+      }
+      #toTopBtn{
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        width: 50%;
+        height: 50%;
+        text-align: right;
+        float: right;
+      }
+    }
+
 
 
     .product-card {
@@ -106,14 +144,10 @@ html{
       margin: 0 10px 20px;
       position: relative;
       overflow: hidden;
-      vertical-align: top;
   }    
   .product-card > img{
-      /* width:60%;
-      justify-self: center; */
-  
       justify-self: end;
-  position: relative;
+      position: relative;
       min-width: 200px;
       max-width: 600px;
       width:100%;
@@ -121,22 +155,11 @@ html{
   
   } 
   .Group-1 > .product-card {
-      /* width:350px;
-      max-width:350px; */
-  
       justify-self: center;
-  
   }
 
 
   
-  /* .Group-1 > product-info {
-      grid-area: productInfo
-  } */
-  
-  /* on hover: image changes */
-
-
 
   .product-image {
       display: inline-block;
