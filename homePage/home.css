@@ -10,7 +10,7 @@ nav{
 
 img[alt~="logo"]{
   height: 50px;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-left: 20px;
 }
 
@@ -110,9 +110,9 @@ img[alt~="bag"]{
 /* start cart pop up */
 #cartPopup {
   position: fixed;
-  top: 20%;
-  right: 0%;
-  transform: translate(-50%, -50%);
+  top: 110px;
+  right: 50px;
+  /* transform: translate(-50%, -50%); */
   width: 300px;
   padding: 20px;
   background-color: white;
@@ -140,7 +140,7 @@ img[alt~="bag"]{
 }
 
 .cartActions {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 }
 
@@ -151,22 +151,25 @@ img[alt~="bag"]{
   cursor: pointer;
 }
 
-#checkoutButton {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 #closeButton {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #b2a694;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+#checkoutButton {
+  padding: 10px 20px;
+  background-color: #b2a694;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
 }
 
 button:hover {
@@ -404,6 +407,7 @@ clear: both;
 }
 
 .column_small {
+  z-index: 9999;
   flex: 0.5;
   padding: 3px;
   margin-right: 5%;
