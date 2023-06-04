@@ -82,6 +82,7 @@ li a:hover{
   right: 50px;
   height: 75px;
   background-color: white;
+  z-index: 999;
 }
 
 img[alt~="menu"]{
@@ -106,10 +107,11 @@ img[alt~="bag"]{
   width: 300px;
   padding: 20px;
   background-color: white;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
   display: none;
+  z-index: 998;
 }
 
 .cartItem {

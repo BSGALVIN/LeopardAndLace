@@ -8,6 +8,7 @@
 
 /* cart items */
 
-document.getElementById("closeButton").addEventListener("click", function() {
-    document.getElementById("cartPopup").style.display = "none";
-});
+// document.getElementById("closeButton").addEventListener("click", function() {
+//     document.getElementById("cartPopup").style.display = "none";
+// });
+
