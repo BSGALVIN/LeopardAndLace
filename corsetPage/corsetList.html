@@ -17,8 +17,45 @@
 </head>
 <body>
 
+  <div class="lowLine"><img src="../images/leopardborder.png"></div>
+  <div class="highLine"><img src="../images/leopardborder.png"></div>
+  <div class="rightLine"><img src="../images/leopardborder.png"></div>
+  <div class="leftLine"><img src="../images/leopardborder.png"></div>
 
-<header>
+  <!-- nav bar -->
+
+  <header class="fixed-header">
+    <nav>    
+      <ul>
+        <li>
+          <div class="menuTag">
+            <img src="../images/bars-solid (1).svg" alt="menu">
+         </div>
+          <ul class="dropMenu-content">
+            <li><a href="../corsetPage/corsetList.html">Corsets</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">Lingerie</a></li>
+            <li><a href="../corsetPage/corsetList.html">Burlesque</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">Costumes</a></li>
+            <li><a href="../corsetPage/corsetList.html">Best Sellers</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">New Arrivals</a></li>
+            <li><a href="../corsetPage/corsetList.html">Sale Items</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">Other</a></li>
+          </ul>
+        </li>   
+          <div class="righticons">
+            <a href="#"><img src="../images/user-solid.svg" alt="profile"></a>
+            <button id="cartButton"><img src="../images/bag-shopping-solid.svg" alt="bag"> </button>
+          </div>
+          <div class="logo">
+            <a href="../homePage/homepage.html"> <img src="../images/LOGO.png" alt="logo"> </a>
+          </div>
+      </ul>    
+    </nav>
+
+  <script src="../homePage/homepage.js"></script>
+
+  </header>
+
   <div class="categoryName">
     <h1>Corsets</h1>
   </div>
@@ -31,7 +68,6 @@
     <option value="date">Price: Low to High</option>
   </select>
 </div>
-</header>
 
   
 
@@ -269,7 +305,58 @@
   <img src="../images/circle-arrow-up-solid.svg" alt="to top" >
 </button>
 
-  <!-- I CANNOT GET THE ARROW ICON TO APPEAR FOR THE LIFE OF ME!!! -->
+
+<div id="cartPopup">
+  <div class="cartItem">
+      <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="">
+      <div class="itemDetails">
+          <h3>Pink Brocade Corset</h3>
+          <p>Size: M</p>
+          <br>
+          <p>Price: $47.00</p>
+      </div>
+  </div>
+  <div class="cartItem">
+  <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters.jpg" alt="">
+      <div class="itemDetails">
+          <h3>Pink Brocade Corset</h3>
+          <p>Size: M</p>
+          <br>
+          <p>Price: $47.00</p>
+      </div>
+  </div>
+  <div class="cartActions">
+      <a href="http://127.0.0.1:5501/shoppingcart/shoppingcart.html"><button id="checkoutButton">Go to checkout</button></a>
+      <button id="closeButton">Close</button>
+  </div>
+</div>
+
+<script src="../homePage/homepage.js"></script>
+
+<footer>
+  <div class="row">
+    <div class="column_new">
+      <h4>Contact Us</h4>
+      <p><strong>Address: </strong> PO Box 120 MORISSET NSW 2264 ABN: 63 686413241</p>
+      <p><strong>Phone: </strong> +0412 005311</p>
+      <p><strong>Email: </strong> sales@leopardandlace.com.au</p>
+    </div>
+    <div class="column_new">
+      <h4>About Us</h4>
+      <p>Leopard & Lace is an Australian business located in Morisset (near Newcastle, NSW).This business was established in December 2010. </p>
+      <p> Our range includes Corsets, Lingerie,  Costumes, Retro Clothing & Accessories. </p>
+      <p> We have a strong customer service focus and have strict procedures for the quality control of our products set in place to ensure that you receive a quality item.   ALL of our corsets are check measured to ensure they are within the measurements range shown in our size chart.  So you can have confidence knowing that the garment you order will have the same waist measurements that are shown in the chart.
+        If you have any questions or need help with sizing, please give us a call for assistance.</p>
+    </div>
+    <div class="column_small">
+      <h4>Follow Us</h4>
+      <a href="https://www.facebook.com/www.leopardandlace.com.au"> <img src="../images/facebook.png" width="40px" height="40px" alt="facebook"> </a>
+      <a href="https://www.instagram.com/leopardandlacecorsets/"> <img src="../images/instagram.png" width="40px" height="40px" alt="instagram"> </a>
+    </div>
+  </div>
+</footer>
+<br>
+<br>
 
 
 </body>

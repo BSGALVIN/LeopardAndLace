@@ -22,6 +22,7 @@
   <div class="leftLine"><img src="../images/leopardborder.png"></div>
 
   <!-- nav bar -->
+
   <header class="fixed-header">
     <nav>    
       <ul>
@@ -128,7 +129,7 @@
     <!-- Product Pricing -->
     <div class="product-price">
       <span>$47.00</span>
-      <a href="#" class="cart-btn" onclick="">Add to cart</a>
+      <a href="#" id="cart-btn" onclick="">Add to cart</a>
     </div>
     <br>
     <br>
@@ -158,15 +159,36 @@
 
 <br>
 
-<!-- insert cart popup here  
-make sure to change acess to ".." for the image icon-->
+<div id="cartPopup">
+  <div class="cartItem">
+      <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="">
+      <div class="itemDetails">
+          <h3>Pink Brocade Corset</h3>
+          <p>Size: M</p>
+          <br>
+          <p>Price: $47.00</p>
+      </div>
+  </div>
+  <div class="cartItem">
+  <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/03/Leopard-Splicing-Lingerie-Set-Adjustable-Neck-Collar-Garters.jpg" alt="">
+      <div class="itemDetails">
+          <h3>Pink Brocade Corset</h3>
+          <p>Size: M</p>
+          <br>
+          <p>Price: $47.00</p>
+      </div>
+  </div>
+  <div class="cartActions">
+      <a href="http://127.0.0.1:5501/shoppingcart/shoppingcart.html"><button id="checkoutButton">Go to checkout</button></a>
+      <button id="closeButton">Close</button>
+  </div>
+</div>
 
-<!-- cart popup end -->
+<script src="../homePage/homepage.js"></script>
 
 <footer>
   <div class="row">
     <div class="column_new">
-      <!-- <img> -->
       <h4>Contact Us</h4>
       <p><strong>Address: </strong> PO Box 120 MORISSET NSW 2264 ABN: 63 686413241</p>
       <p><strong>Phone: </strong> +0412 005311</p>
@@ -180,7 +202,6 @@ make sure to change acess to ".." for the image icon-->
         If you have any questions or need help with sizing, please give us a call for assistance.</p>
     </div>
     <div class="column_small">
-      <!-- <img> -->
       <h4>Follow Us</h4>
       <a href="https://www.facebook.com/www.leopardandlace.com.au"> <img src="../images/facebook.png" width="40px" height="40px" alt="facebook"> </a>
       <a href="https://www.instagram.com/leopardandlacecorsets/"> <img src="../images/instagram.png" width="40px" height="40px" alt="instagram"> </a>
