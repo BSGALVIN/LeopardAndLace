@@ -6,6 +6,8 @@ nav{
 .righticons {
   float: right;
   z-index: 10;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 img[alt~="logo"]{
@@ -72,9 +74,6 @@ li a:hover{
   }
 }
 
-
-
-
 .fixed-header {
   position: fixed;
   top: 50px;
@@ -97,6 +96,9 @@ img[alt~="bag"]{
   height: 30px;
   padding: 10px;
 }
+
+
+
 
 /* start cart pop up */
 #cartPopup {
@@ -176,12 +178,7 @@ img[alt~="profile"]{
   background-color: #ffffff;
 }
 
-.righticons {
-  float: right;
-  z-index: 10;
-  padding-top: 10px;
-  padding-right: 10px;
-}
+
 
 
 
@@ -368,18 +365,6 @@ img[alt~="profile"]{
     background-color:#b2a694;
   
   }
-
-  footer > div{
-    /* padding: 30px; */
-    /* idk something here about how they align on either side of the screen; 
-    not clumped and center */
-  }
-
-  /* footer> div > img{
-    width: 60px;
-    height: 60px;
-  } */
-
   
  
 
@@ -389,19 +374,6 @@ padding: 30px;
 position: static;
 margin-right: 30px;
 }
-
-/* Set width length for the left, right and middle columns */
-/* .left {
- width: 20%;
-}
-
-.middle {
- width: 50%;
-}
-
-.right {
- width: 10%;
-} */
 
 .row {
   display: flex;

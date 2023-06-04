@@ -1,29 +1,357 @@
-/* general */
-html{
-    padding: 30px;
-  }
-  
-  body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 10;
-  }
-  
 
+.product-info a{
+  text-decoration: none;
+}
+
+ /* image border start */
+ .lowLine img{
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  height: 50px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.highLine img{
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 50px;
+  object-fit: cover;
+  object-position: top;
+}
+.rightLine img{
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  position: fixed;
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+.leftLine img{
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+/* image border end */
   
-  #toTopBtn img{
-   width: 20%;
-   height: 20%;
+/* desktop */
+@media screen and (min-width: 360px){
+  html, body {
+    height: 90%;
+    width: 90%;
+    padding: 50px;
+    float: left;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
-  
-  
-  header {
-  position: relative;
+  nav ul{
+    flex-direction: row;
   }
-  
   h1{
+    margin-top: 90px;
     font-size: 80px;
   }
+  h5{
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+  .Group-1{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+#toTopBtn{
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  height: 25%;
+  text-align: right;
+  background-color: transparent;
+  float: right;
+}
+
+  .lowLine img{
+    width: 100vw;
+  }
+  .highLine img{
+    width: 100vw;
+  }
+  img[alt~="logo"]{
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  footer {
+    width: 100%;
+    background-color:#b2a694;
+    margin: 0;
+  } 
+  .row {
+    display: flex;
+  }
+  .column_new {
+    flex: 1;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  .column_small {
+    flex: 0.5;
+    padding: 3px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 360px){
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    float: left;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  footer{
+    padding-bottom: 30px;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  h1{
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  h5{
+    font-weight: normal;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  .Group-1{
+    grid-template-columns: 1fr 1fr;
+  }
+  .Group-1 img{
+    width: 150px;
+    height: 150px;
+  }
+  #toTopBtn{
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    height: 25%;
+    background-color: transparent;
+    text-align: right;
+    float: right;
+  }
+  img[alt~="logo"]{
+    height: 30px;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+.lowLine img{
+  width: 100%;
+}
+.highLine img{
+  width: 100%;
+}
+footer {
+  width: 100%;
+  background-color:#b2a694;
+  margin: 0;
+}
+.row {
+  padding-top: 10px;
+  display: grid;
+}
+.column_new {
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.column_small {
+  padding: 3px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+}
+
+/* nav */
+header{
+  z-index: 9999;
+}
+
+nav{
+  position: sticky;
+}
+
+.righticons {
+  float: right;
+  z-index: 10;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+nav ul{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: flex-start;
+  background-color: white;
+  }
+
+  nav li:hover ul{
+    transform: scale(1,1);
+    transition: 0.3s;
+  } 
+
+nav li {
+    float: left;
+    background-color: #b2a694;
+  }
+  
+nav ul ul{
+    transform: scale(1,0);
+    transform-origin: top center;
+    position: absolute;
+    top:100%;
+    transition: 0.3s;
+    width: 100%;
+}
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: whitesmoke;
+}
+
+.active{
+  background-color: #B74B4B;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  height: 75px;
+  background-color: white;
+}
+
+img[alt~="menu"]{
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+img[alt~="bag"]{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+img[alt~="profile"]{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+/* header end */
+
+/* start cart pop up */
+#cartPopup {
+  position: fixed;
+  z-index: 9999;
+  top: 110px;
+  right: 50px;
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cartItem img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.itemDetails {
+  flex-grow: 1;
+}
+
+.cartActions {
+  justify-content: space-between;
+}
+
+#cartButton {
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#closeButton {
+  padding: 10px 20px;
+  background-color: #b2a694;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#checkoutButton {
+  padding: 10px 20px;
+  background-color: #b2a694;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+/* end cart pop up */
+  
+  #toTopBtn img{
+   width: 15%;
+   height: 15%;
+   background-color: transparent;
+  }
+  
   
   .categoryName{
     position: relative;
@@ -31,8 +359,6 @@ html{
     z-index: 2;
   }
   
-  
-
   
   h6{
     font-size: 12px;
@@ -89,6 +415,7 @@ html{
       h5{
         font-weight: normal;
         font-size: 18px;
+        text-decoration: none;
       }
    .Group-1 img{
       width: 250px;
@@ -106,7 +433,6 @@ html{
     }
   
 
-
     @media screen and (max-width: 360px){
       h1{
         font-size: 50px;
@@ -114,6 +440,7 @@ html{
       h5{
         font-weight: normal;
         font-size: 15px;
+        text-decoration: none;
       }
       .Group-1{
         grid-template-columns: 1fr 1fr;

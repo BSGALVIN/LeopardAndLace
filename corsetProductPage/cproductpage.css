@@ -1,10 +1,4 @@
-/* Basic Styling */
-html, body {
-    height: 90%;
-    width: 90%;
-    margin: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
+
 
   /* image border start */
   .lowLine img{
@@ -50,6 +44,12 @@ html, body {
   
 /* desktop */
 @media screen and (min-width: 360px){
+  html, body {
+    height: 90%;
+    width: 90%;
+    margin: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
   nav ul{
     flex-direction: row;
   }
@@ -114,6 +114,13 @@ html, body {
 
 /* mobile */
 @media screen and (max-width: 360px){
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
   nav ul{
     flex-direction: column;
   }
@@ -147,10 +154,8 @@ align-items: center;
 }
 .left-column .big-img{
 position: absolute;
-}
-.big-img img{
-  float: center;
-  height: 140px;
+float: right;
+right: 0;
 }
 .left-column img.active {
   opacity: 1;
@@ -159,6 +164,7 @@ footer {
   width: 100%;
   background-color:#b2a694;
   margin: 0;
+  padding-bottom: 40px;
 }
 .row {
   padding-top: 10px;
@@ -182,9 +188,18 @@ footer {
 header{
   z-index: 9999;
 }
+
 nav{
   position: sticky;
 }
+
+.righticons {
+  float: right;
+  z-index: 10;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
 nav ul{
   box-sizing: border-box;
   margin: 0;
@@ -193,14 +208,17 @@ nav ul{
   justify-content: flex-start;
   background-color: white;
   }
+
   nav li:hover ul{
     transform: scale(1,1);
     transition: 0.3s;
   } 
+
 nav li {
     float: left;
     background-color: #b2a694;
   }
+  
 nav ul ul{
     transform: scale(1,0);
     transform-origin: top center;
@@ -209,6 +227,7 @@ nav ul ul{
     transition: 0.3s;
     width: 100%;
 }
+
 li a{
   display: block;
   color: black;
@@ -216,12 +235,15 @@ li a{
   padding: 14px 16px;
   text-decoration: none;
 }
+
 li a:hover{
   background-color: whitesmoke;
 }
+
 .active{
   background-color: #B74B4B;
 }
+
 .fixed-header {
   position: fixed;
   top: 50px;
@@ -230,12 +252,14 @@ li a:hover{
   height: 75px;
   background-color: white;
 }
+
 img[alt~="menu"]{
   width: 30px;
   height: 30px;
   padding: 20px;
   cursor: pointer;
 }
+
 img[alt~="bag"]{
   width: 30px;
   height: 30px;
@@ -245,14 +269,8 @@ img[alt~="profile"]{
   width: 30px;
   height: 30px;
   padding: 10px;
-  background-color: #ffffff;
 }
-.righticons {
-  float: right;
-  z-index: 10;
-  padding-top: 10px;
-  padding-right: 10px;
-}
+
 /* header end */
 
 
@@ -382,7 +400,7 @@ img[alt~="profile"]{
     color: #43474D;
     margin-right: 20px;
   }
-  .cart-btn {
+  #cart-btn {
     display: inline-block;
     background-color: #b2a694;
     border-radius: 6px;
@@ -393,7 +411,7 @@ img[alt~="profile"]{
     padding: 12px 30px;
     transition: all .5s;
   }
-  .cart-btn:hover {
+  #cart-btn:hover {
     background-color: #64af3d;
   }
 
@@ -493,13 +511,13 @@ form {
     color: #c59b08;
 }
 
-/* header cart pop up */
+/* start cart pop up */
 #cartPopup {
-  z-index: 9999;
   position: fixed;
-  top: 20%;
-  right: 0%;
-  transform: translate(-50%, -50%);
+  z-index: 9999;
+  top: 110px;
+  right: 50px;
+  /* transform: translate(-50%, -50%); */
   width: 300px;
   padding: 20px;
   background-color: white;
@@ -508,48 +526,60 @@ form {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: none;
 }
+
 .cartItem {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
+
 .cartItem img {
   width: 80px;
   height: 80px;
   object-fit: cover;
   margin-right: 10px;
 }
+
 .itemDetails {
   flex-grow: 1;
 }
+
 .cartActions {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 }
+
 #cartButton {
   background-color: #ffffff;
   color: white;
   border: none;
   cursor: pointer;
 }
-#checkoutButton {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+
 #closeButton {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #b2a694;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
 }
+
+#checkoutButton {
+  padding: 10px 20px;
+  background-color: #b2a694;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+}
+
 button:hover {
   background-color: #ffffff;
 }
 /* end cart pop up */
+
 
