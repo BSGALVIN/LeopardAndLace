@@ -30,119 +30,33 @@
             <img src="../images/bars-solid (1).svg" alt="menu">
          </div>
           <ul class="dropMenu-content">
-            <li><a href="corsetList.html">Corsets</a></li>
-            <li><a href="lingerieList.html">Lingerie</a></li>
-            <li><a href="corsetList.html">Burlesque</a></li>
-            <li><a href="lingerieList.html">Costumes</a></li>
-            <li><a href="corsetList.html">Best Sellers</a></li>
-            <li><a href="lingerieList.html">New Arrivals</a></li>
-            <li><a href="corsetList.html">Sale Items</a></li>
-            <li><a href="lingerieList.html">Other</a></li>
+            <li><a href="../corsetPage/corsetList.html">Corsets</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">Lingerie</a></li>
+            <li><a href="../corsetPage/corsetList.html">Burlesque</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">Costumes</a></li>
+            <li><a href="../corsetPage/corsetList.html">Best Sellers</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">New Arrivals</a></li>
+            <li><a href="../corsetPage/corsetList.html">Sale Items</a></li>
+            <li><a href="../lingerie sets/lingerieList.html">Other</a></li>
           </ul>
         </li>   
           <div class="righticons">
             <a href="#"><img src="../images/user-solid.svg" alt="profile"></a>
             <button id="cartButton"><img src="../images/bag-shopping-solid.svg" alt="bag"> </button>
-            <!-- <button id="cartButton">  </button> -->
           </div>
           <div class="logo">
-            <a href="#"> <img src="../images/LOGO.png" alt="logo"> </a>
+            <a href="../homePage/homepage.html"> <img src="../images/LOGO.png" alt="logo"> </a>
           </div>
       </ul>    
     </nav>
 
   <script src="../homePage/homepage.js"></script>
-  
 
   </header>
 
-  <script>
-//https://stackoverflow.com/questions/54677583/javascript-function-to-display-image-based-on-selection-not-working
-    var imgOption = document.getElementById('imageOption');
-    var front = document.getElementById('front');
-    var back = document.getElementById('back');
-    var detail = document.getElementById('detail');
-
-    function changeImage(){
-      const value = imageOption.options[imageOption.selectedIndex].value;
-  if(value == 'front'){
-    front.style.display = 'block';
-    back.style.display = 'none';
-    detail.style.display = 'none';
-  } else if(value == 'back'){
-    front.style.display = 'none';
-    back.style.display = 'block';
-    detail.style.display = 'none';
-  } else if(value == 'detail'){
-    front.style.display = 'none';
-    back.style.display = 'none';
-    detail.style.display = 'block';
-  }
-}
-
-changeImage();
-
-
-  // if (radio[1].checked){
-  //   image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
-  //   image.opacity = 1;
-  // }
-  // if (radio[2].checked){
-  //   image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg";
-  //   image.opacity = 1;
-  // }
-  // if (radio[3].checked){
-  //   image.src = "https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_c.jpg";
-  //   image.opacity = 1;
-  // }
-  // else {
-  //   image.src = "https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1";
-  //   image.opacity = 1;
-  // }
-  </script>
-       
-       <script>
-      
-var statusCode = document.getElementById('statusCode');
-var greenDot = document.getElementById('greenDot');
-var yellowDot = document.getElementById('yellowDot');
-var redDot = document.getElementById('redDot');
-
-function myFunction() {
-
-    const value = statusCode.options[statusCode.selectedIndex].value
-
-    if(value == "Green") {        
-        greenDot.style.display = 'block';
-        yellowDot.style.display = 'none';
-        redDot.style.display = 'none';
-    }
-    else if(value == "Yellow"){
-        greenDot.style.display = 'none';
-        yellowDot.style.display = 'block';
-        redDot.style.display = 'none';
-    }
-    else if(value == "Red"){
-        greenDot.style.display = 'none';
-        yellowDot.style.display = 'none';
-        redDot.style.display = 'block';
-    }
-}
-
-myFunction();
-       </script>
-
-
-        <select id="statusCode" onchange="myFunction()"> 
-          <option value="Green">Green</option>
-          <option value="Yellow">Yellow</option>
-          <option value="Red">Red</option>
-        </select>
-        <p>    
-          <img src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" style="display: none;" id="greenDot"/>
-          <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" style="display: none;" id="yellowDot"/>
-          <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_c.jpg" style="display:none;" id="redDot"/>
-        </p>
+  <br>
+  <br>
+  <br>
 
 <div class="rowCol">
   <div class="column left-column">
@@ -150,12 +64,6 @@ myFunction();
     <img class="big-img" data-image="back" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" alt="Product Image" style="display: none;" id="back">
     <img class="big-img" data-image="detail" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_c.jpg" alt="Product Image" style="display: none;" id="detail"> 
     <div class="product-color">
-
-<select id="imageOption" onload="changeImage()">
-  <option value="front">f</option>
-  <option value="back">b</option>
-  <option value="detail">d</option>
-</select>
 
 <div class="color-choose" id="imageOption" onload="changeImage()">  
   <div>
@@ -177,7 +85,8 @@ myFunction();
   </div>
       </div>
     </div>
-
+<br>
+<br>
   </div>
   <div class="column right-column">
     <div class="product-description">
@@ -245,20 +154,6 @@ myFunction();
 
 
 </div>
-
-
-
-<div id="addedToPopup">
-  <div id="cartItem">
-      <h2>Added to Cart!</h2>
-  </div>
-  <div class="cartActions">
-      <button id="ViewCartBtn"><a href=../shoppingcart/shoppingcart.html>View Cart</a></button>
-      <button id="ContinueShopBtn">Continue Shopping</button>
-  </div>
-</div>
-
-<script src="cproductpage.js"></script>
 
 
 <br>
