@@ -1,4 +1,8 @@
 
+.product-info a{
+  text-decoration: none;
+  color: black;
+}
 
   /* image border start */
   .lowLine img{
@@ -52,6 +56,10 @@
     margin: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
+  .Group-1 img{
+    width: 300px;
+    height: 300px;
+  }
   nav ul{
     flex-direction: row;
   }
@@ -62,6 +70,8 @@
   h5{
     font-weight: normal;
     font-size: 18px;
+    text-decoration: none;
+    color: black;
   }
   .Group-1{
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -122,6 +132,10 @@
   footer{
     padding-bottom: 30px;
   }
+  .Group-1 img{
+    width: 100px;
+    height: 100px;
+  }
   nav ul{
     flex-direction: column;
   }
@@ -132,6 +146,8 @@
   h5{
     font-weight: normal;
     font-size: 15px;
+    color: black;
+    text-decoration: none;
   }
   .Group-1{
     grid-template-columns: 1fr 1fr;
@@ -143,8 +159,8 @@
   #toTopBtn{
     border: none;
     cursor: pointer;
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 50%;
     background-color: transparent;
     text-align: right;
     float: right;

@@ -1,10 +1,4 @@
-/* Basic Styling */
-html, body {
-    height: 90%;
-    width: 90%;
-    margin: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
+
 
   /* image border start */
   .lowLine img{
@@ -50,6 +44,12 @@ html, body {
   
 /* desktop */
 @media screen and (min-width: 360px){
+  html, body {
+    height: 90%;
+    width: 90%;
+    margin: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
   nav ul{
     flex-direction: row;
   }
@@ -114,6 +114,13 @@ html, body {
 
 /* mobile */
 @media screen and (max-width: 360px){
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
   nav ul{
     flex-direction: column;
   }
@@ -147,10 +154,8 @@ align-items: center;
 }
 .left-column .big-img{
 position: absolute;
-}
-.big-img img{
-  float: center;
-  height: 140px;
+float: right;
+right: 0;
 }
 .left-column img.active {
   opacity: 1;
@@ -159,6 +164,7 @@ footer {
   width: 100%;
   background-color:#b2a694;
   margin: 0;
+  padding-bottom: 40px;
 }
 .row {
   padding-top: 10px;
