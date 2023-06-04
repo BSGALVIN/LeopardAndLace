@@ -1,12 +1,5 @@
 
-/* general */
-html, body {
-  height: 90%;
-  width: 90%;
-  margin: 50px;
-  float:none;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
+
   /* image border start */
   .lowLine img{
     z-index: 9999;
@@ -51,6 +44,14 @@ html, body {
 
   /* desktop */
 @media screen and (min-width: 360px){
+  html, body {
+    height: 90%;
+    width: 90%;
+    padding: 50px;
+    float: left;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
   nav ul{
     flex-direction: row;
   }
@@ -71,9 +72,10 @@ html, body {
   width: 25%;
   height: 25%;
   text-align: right;
-  background-color: none;
+  background-color: transparent;
   float: right;
 }
+
   .lowLine img{
     width: 100vw;
   }
@@ -109,6 +111,17 @@ html, body {
 
 /* mobile */
 @media screen and (max-width: 360px){
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    float: left;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  footer{
+    padding-bottom: 30px;
+  }
   nav ul{
     flex-direction: column;
   }
@@ -132,7 +145,7 @@ html, body {
     cursor: pointer;
     width: 25%;
     height: 25%;
-    background-color: none;
+    background-color: transparent;
     text-align: right;
     float: right;
   }
@@ -333,10 +346,11 @@ button:hover {
 
 
 #toTopBtn img{
- width: 25%;
- height: 25%;
+ width: 15%;
+ height: 15%;
+ background-color: transparent;
+ 
 }
-
 
 .categoryName{
   position: relative;
@@ -389,9 +403,6 @@ label{
     justify-content: space-evenly;
     flex-wrap: wrap;
     display: grid;
-    /* i actually have no idea what this means but have been told to use it so here goes::
-    grid-template-areas: "productImg productDescription" */
-
     padding-bottom: 10px;
 
   }
@@ -400,11 +411,8 @@ label{
     margin-bottom:10px;
 }    
 .product-card > img{
-    /* width:60%;
-    justify-self: center; */
-
     justify-self: end;
-position: relative;
+    position: relative;
     min-width: 200px;
     max-width: 600px;
     width:100%;
@@ -412,18 +420,10 @@ position: relative;
 
 } 
 .Group-1 > .product-card {
-    /* width:350px;
-    max-width:350px; */
 
     justify-self: center;
 
 }
-
-/* .Group-1 > product-info {
-    grid-area: productInfo
-} */
-
-/* on hover: image changes */
 
 .product-image {
     display: inline-block;
