@@ -1,18 +1,21 @@
 /* Basic Styling */
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    /* however wide the border is that we will add to the page */
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    display: flex;
-  }
-
+  height: 90%;
+  width: 90%;
+  margin: 50px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.border {
+  position: fixed;
+  z-index: 1;
+  border: 50px solid transparent;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-image: url(../images/leopardborder.png) 90 stretch;
+  border-image-repeat: initial;
+} 
 
 /* Columns */
 /* https://www.w3schools.com/howto/howto_css_two_columns.asp */
@@ -26,6 +29,7 @@ html, body {
 
 .right-column {
   flex: 2;
+  z-index: 999;
 }
 
 @media screen and (max-width: 600px) {
@@ -41,8 +45,6 @@ html, body {
     position: relative;
     opacity: 1;
     transition: all 0.3s ease;
-
-
     top: 150px;
   }
 
@@ -99,9 +101,6 @@ html, body {
     flex-direction: column;
     padding: 5px;
   }
-
-
-
   .color-choose input[type=radio] {
     display: none;
   }
@@ -163,7 +162,7 @@ html, body {
   margin-bottom: 20px;
 }
 .size-config a {
-  color: #358ED7;
+  color: #b2a694;
   text-decoration: none;
   font-size: 12px;
   position: relative;
@@ -195,9 +194,10 @@ html, body {
   }
   .cart-btn {
     display: inline-block;
-    background-color: #7DC855;
+    background-color: #b2a694;
     border-radius: 6px;
     font-size: 16px;
+    font-weight: bold;
     color: #FFFFFF;
     text-decoration: none;
     padding: 12px 30px;

@@ -31,16 +31,16 @@
   if (radio[3].checked){
       formula.src = "formula_none.gif";
   }
-}
+
 
 
 
 //added to cart popup
-document.getElementById("addCartButton").addEventListener("click", function() {
+document.getElementByClass("cart-btn").addEventListener("click", function() {
   document.getElementById("addedToPopup").style.display = "block";
 });
 
-document.getElementById("closeButton").addEventListener("click", function() {
+document.getElementById("ContinueShopBtn").addEventListener("click", function() {
   document.getElementById("addedToPopup").style.display = "none";
 });
 

@@ -11,10 +11,50 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script type="text/javascript" src="cproductpage.js"></script>
+    
 
 </head>
 <body>
+
+  <div class="lowLine"><img src="../images/leopardborder.png"></div>
+  <div class="highLine"><img src="../images/leopardborder.png"></div>
+  <div class="rightLine"><img src="../images/leopardborder.png"></div>
+  <div class="leftLine"><img src="../images/leopardborder.png"></div>
+
+  <!-- nav bar -->
+  <header class="fixed-header">
+    <nav>    
+      <ul>
+        <li>
+          <div class="menuTag">
+            <img src="../images/bars-solid (1).svg" alt="menu">
+         </div>
+          <ul class="dropMenu-content">
+            <li><a href="corsetList.html">Corsets</a></li>
+            <li><a href="lingerieList.html">Lingerie</a></li>
+            <li><a href="corsetList.html">Burlesque</a></li>
+            <li><a href="lingerieList.html">Costumes</a></li>
+            <li><a href="corsetList.html">Best Sellers</a></li>
+            <li><a href="lingerieList.html">New Arrivals</a></li>
+            <li><a href="corsetList.html">Sale Items</a></li>
+            <li><a href="lingerieList.html">Other</a></li>
+          </ul>
+        </li>   
+          <div class="righticons">
+            <a href="#"><img src="../images/user-solid.svg" alt="profile"></a>
+            <button id="cartButton"><img src="../images/bag-shopping-solid.svg" alt="bag"> </button>
+            <!-- <button id="cartButton">  </button> -->
+          </div>
+          <div class="logo">
+            <a href="#"> <img src="../images/LOGO.png" alt="logo"> </a>
+          </div>
+      </ul>    
+    </nav>
+
+  <script src="../homePage/homepage.js"></script>
+  
+
+  </header>
 
   <script>
 //https://stackoverflow.com/questions/54677583/javascript-function-to-display-image-based-on-selection-not-working
@@ -104,7 +144,7 @@ myFunction();
           <img src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_c.jpg" style="display:none;" id="redDot"/>
         </p>
 
-<div class="row">
+<div class="rowCol">
   <div class="column left-column">
     <img class="big-img" data-image="front" src="https://i0.wp.com/www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim.jpg?fit=300%2C300&amp;ssl=1" alt="Product Image" style="display: block;" id="front">
     <img class="big-img" data-image="back" src="https://www.leopardandlace.com.au/wp-content/uploads/2022/04/Pink-Brocade-Burlesque-Sweetheart-Corset-Ruffle-Trim_a-300x300.jpg" alt="Product Image" style="display: none;" id="back">
@@ -179,7 +219,7 @@ myFunction();
     <!-- Product Pricing -->
     <div class="product-price">
       <span>$47.00</span>
-      <a href="#" class="cart-btn">Add to cart</a>
+      <a href="#" class="cart-btn" onclick="">Add to cart</a>
     </div>
     <br>
     <br>
@@ -209,25 +249,51 @@ myFunction();
 
 
 <div id="addedToPopup">
-  <div class="cartItem">
+  <div id="cartItem">
       <h2>Added to Cart!</h2>
   </div>
   <div class="cartActions">
-      <button id="checkoutButton"><a href=shoppingcart.html>View Cart</a></button>
-      <button id="closeButton">Continue Shopping</button>
+      <button id="ViewCartBtn"><a href=../shoppingcart/shoppingcart.html>View Cart</a></button>
+      <button id="ContinueShopBtn">Continue Shopping</button>
   </div>
 </div>
 
-<!-- a href=cart page -->
+<script src="cproductpage.js"></script>
 
 
 <br>
 
-<br>
+<!-- insert cart popup here  
+make sure to change acess to ".." for the image icon-->
+
+<!-- cart popup end -->
 
 <footer>
-  
+  <div class="row">
+    <div class="column_new">
+      <!-- <img> -->
+      <h4>Contact Us</h4>
+      <p><strong>Address: </strong> PO Box 120 MORISSET NSW 2264 ABN: 63 686413241</p>
+      <p><strong>Phone: </strong> +0412 005311</p>
+      <p><strong>Email: </strong> sales@leopardandlace.com.au</p>
+    </div>
+    <div class="column_new">
+      <h4>About Us</h4>
+      <p>Leopard & Lace is an Australian business located in Morisset (near Newcastle, NSW).This business was established in December 2010. </p>
+      <p> Our range includes Corsets, Lingerie,  Costumes, Retro Clothing & Accessories. </p>
+      <p> We have a strong customer service focus and have strict procedures for the quality control of our products set in place to ensure that you receive a quality item.   ALL of our corsets are check measured to ensure they are within the measurements range shown in our size chart.  So you can have confidence knowing that the garment you order will have the same waist measurements that are shown in the chart.
+        If you have any questions or need help with sizing, please give us a call for assistance.</p>
+    </div>
+    <div class="column_small">
+      <!-- <img> -->
+      <h4>Follow Us</h4>
+      <a href="https://www.facebook.com/www.leopardandlace.com.au"> <img src="../images/facebook.png" width="40px" height="40px" alt="facebook"> </a>
+      <a href="https://www.instagram.com/leopardandlacecorsets/"> <img src="../images/instagram.png" width="40px" height="40px" alt="instagram"> </a>
+    </div>
+  </div>
 </footer>
+<br>
+<br>
 
 </body>
 </html>
