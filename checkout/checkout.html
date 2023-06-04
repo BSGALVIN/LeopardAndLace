@@ -15,32 +15,60 @@
           <div class="checkout-left">
             <h2>Express Checkout</h2>
             <div class="payment-methods">
-              <button class="payment-button">PayPal</button>
-              <button class="payment-button">Google Pay</button>
-              <button class="payment-button">Shop Pay</button>
+              <button class="payment-button"> <img src="../images/paypal.png" alt="paypal"></button>
+              <button class="payment-button"> <img src="../images/Gpay.png" alt="gpay"></button>
+              <button class="payment-button"> <img src="../images/shoppay.png" alt="shoppay"></button>
             </div>
             
             <h2>OR</h2>
-            <label for="nameInput">Contact Information:</label>
-            <input type="text" id="emailInput" required placeholder="Email address">
+            <label for="emailInput">Contact Information:</label>
+            <form>
+              <input type="text" id="emailInput" required placeholder="Email address">
+              <input type="checkbox" id="emailCheckbox">
+              <label class="checkboxLabel"for="emailCheckbox">Email me with news and offers</label>
+            </form>
+            <!-- <form>
+              <div>
+                <label for="emailInput">Contact Information</label>
+                <input type="text" id="emailInput" required placeholder="Email address">
+              </div>
+              <div>
+              <div>
+                <input type="checkbox" id="exampleCheck" checked>
+                <label for="exampleCheck">Sign me up for email about exclusive offers</label>
+              </div>
+            </form> -->
         
 
+            <label for="nameInput">Address:</label>
             <form>
-              <label for="nameInput">Name:</label>
-              <input type="text" id="nameInput" required>
+              <input type="text" id="nameInput" required placeholder="Name">
               
-              <label for="addressInput">Address:</label>
-              <input type="text" id="addressInput" required>
+              <input type="text" id="addressInput" required placeholder="Address">
               
-              <label for="cityInput">City:</label>
-              <input type="text" id="cityInput" required>
+              <input type="text" id="cityInput" required placeholder="City">
               
-              <label for="zipInput">ZIP Code:</label>
-              <input type="text" id="zipInput" required>
+              <input type="text" id="zipInput" required placeholder="Postcode">
               
-              <label for="countryInput">Country:</label>
-              <input type="text" id="countryInput" required>
+              <input type="text" id="countryInput" required placeholder="Country">
+
+              <input type="text" id="phoneInput" required placeholder="Phone number">
+              <input type="checkbox" id="phoneCheckbox">
+              <label class="checkboxLabel"for="phoneCheckbox">Text me with news and offers</label>
             </form>
+
+
+            <label for="nameInput">Credit Card:</label>
+            <form>
+              <input type="text" id="cardInput" required placeholder="Card number">
+              
+              <input type="text" id="cardnameInput" required placeholder="Name on card">
+              
+              <input type="text" id="Input" required placeholder="Expiration date (MM / YY)">
+              
+              <input type="text" id="securityInput" required placeholder="Security code">
+            </form>
+
           </div>
           
           <div class="checkout-right">
@@ -62,18 +90,28 @@
             </div>
             
             <div class="total">
-              <p>Subtotal: $78.20</p>  
+              <p>Subtotal: $78.20</p> 
               <p>Shipping: $5.00</p>
+              <p>Discount: None applied</p> 
               <h3>Total: $83.20</h3>
             </div>
+            
+            <!-- <button class="confirm-button">Confirm Order</button> -->
 
-            
-            
-            <button class="confirm-button">Confirm Order</button>
+            <button class="confirm-button" onclick="showPopup()">Confirm Order</button>
+
+            <div id="popup" class="popup">
+              <span id="popup-message">Thanks for your order!</span>
+              <p>Your order has been placed. <br>
+                A confirmation email will be sent shortly!</p>
+            </div>
+
+            <a href="http://127.0.0.1:5501/shoppingcart/shoppingcart.html">
+              <button class="return-button">Return To Cart</button>
+            </a>
+
           </div>
         </div>
-</body>
-</html>
-
+        <script src="checkout.js"></script> 
 </body>
 </html>

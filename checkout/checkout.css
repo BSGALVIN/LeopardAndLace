@@ -1,5 +1,7 @@
 html{
-    padding: 30px;
+    padding: 50px;
+    padding-top: 20px;
+    background-color: white;
   }
   
   body {
@@ -48,26 +50,48 @@ html{
   
   .payment-button {
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    color: #b2a694;
     border: none;
+    border-color: #b2a694;
     border-radius: 4px;
     margin-right: 10px;
     margin-bottom: 10px;
     cursor: pointer;
   }
-  
-  form {
-    margin-bottom: 20px;
+
+  img[alt~="paypal"]{
+    height: 30px;
+  }
+  img[alt~="gpay"]{
+    height: 30px;
+  }
+  img[alt~="shoppay"]{
+    height: 30px;
   }
   
+  form input{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+form{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
   label {
-    display: block;
-    margin-bottom: 5px;
+  padding-bottom: 20px;
   }
   
+ #emailInput {
+  margin-right: 20px;
+  margin-left: 20px;
+ }
+
+ 
+
   input[type="text"] {
-    width: 100%;
+    width: 90%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -77,6 +101,7 @@ html{
   .checkout-right .product {
     display: flex;
     margin-bottom: 20px;
+    top: 20px;
   }
   
   .checkout-right .product img {
@@ -84,10 +109,12 @@ html{
     height: 100px;
     object-fit: cover;
     margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
   
   .checkout-right .product-details h3 {
-    margin-top: 0;
+    margin-top: 20px;
   }
   
   .checkout-right .total {
@@ -97,10 +124,68 @@ html{
   
   .checkout-right .confirm-button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #b2a694;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    float: right;
+
+  }
+
+  .return-button {
+    padding: 10px 20px;
+    background-color: #b2a694;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    float: right;
+    margin-top: 10px;
+
+  }
+
+  .total {
+    float: right;
+  }
+
+
+  /* start order confirmed popup */
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 160px;
+    background-color: #b2a694;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+    padding: 20px;
+    padding-top: 70px;
+    text-align: center;
+  }
+  
+  .popup-message {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding-top: 30%;
+  }
+  
+  span {
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 1px rgb(19, 16, 39);
+    font-weight: bold;
+    padding-top: 30%;
+  }
+  
+  .show-popup {
+    display: block;
   }
