@@ -49,6 +49,7 @@
     float: left;
     margin: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 50px;
   }
   nav ul{
     flex-direction: row;
@@ -69,6 +70,7 @@
     width: 100%;
     background-color:#b2a694;
     margin: 0;
+    margin-top: 70px;
   } 
   .row {
     display: flex;
@@ -92,13 +94,15 @@
   html, body {
     height: 100%;
     width: 100%;
-    padding: 50px;
-    float: left;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    /* float: left; */
     margin: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
   footer{
     padding-bottom: 30px;
+    margin-top: 70px;
   }
   nav ul{
     flex-direction: column;
@@ -118,6 +122,7 @@ footer {
   width: 100%;
   background-color:#b2a694;
   margin: 0;
+  margin-top: 70px;
 }
 .row {
   padding-top: 10px;
@@ -301,6 +306,21 @@ nav{
     nav ul{
       flex-direction: column;
     }
+
+    img[alt~="logo"]{
+        height: 40px;
+        padding-top: 13px;
+        padding-left: 20px;
+      }
+
+    html {
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+    #proceedToCheckoutBtn {
+        width: 20%;
+        height: 50px;
+      }
   }
   
   
@@ -448,6 +468,7 @@ th:last-child{
     float: right;
     cursor: pointer;
     z-index: 9999;
+
   }
   
   
