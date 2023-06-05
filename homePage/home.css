@@ -513,35 +513,3 @@ img[alt~="profile"]{
     display: flex;
     width: 40%;
   }
-
-/* .column {
-float: left;
-padding: 30px;
-position: static;
-margin-right: 30px;
-}
-
-.row {
-  display: flex;
-}
-
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
-.column_new {
-  flex: 1;
-  margin-left: 5%;
-  margin-top: 20px;
-}
-
-.column_small {
-  z-index: 9999;
-  flex: 0.5;
-  padding: 3px;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-top: 20px;
-} */

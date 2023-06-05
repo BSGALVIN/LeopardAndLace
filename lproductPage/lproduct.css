@@ -90,7 +90,7 @@ img[alt~="logo"]{
 .left-column .big-img{
 position: absolute;
 max-width: 50%;
-left: 10%;
+left: 15%;
 }
 .left-column img.active {
   opacity: 1;
