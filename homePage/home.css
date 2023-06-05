@@ -1,3 +1,310 @@
+/* image border start */
+.lowLine img{
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  height: 50px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.highLine img{
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 50px;
+  object-fit: cover;
+  object-position: top;
+}
+.rightLine img{
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  position: fixed;
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+.leftLine img{
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+/* image border end */
+
+@media screen and (min-width: 360px){
+  .lowLine img{
+    width: 100vw;
+  }
+  .highLine img{
+    width: 100vw;
+  }
+  img[alt~="logo"]{
+    height: 50px;
+    padding-top: 13px;
+    padding-left: 20px;
+  }
+  img[alt~="newarrivals"]{
+    width: 80%;
+    margin-top: 170px;
+    margin-right: 120px;
+    float: right;
+    cursor: pointer;
+  }
+  footer {
+    width: 100%;
+    background-color:#b2a694;
+    margin: 0;
+  } 
+  nav ul{
+    flex-direction: row;
+  }
+  
+  .row1 {
+    display: flex;
+  }
+  
+  .column1 {
+    flex: 1;
+  } 
+  .row {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .column_new {
+    flex: 1;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  .column_small {
+    flex: 0.5;
+    padding: 3px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  img[alt~="staysexy"]{
+    width: 80%;
+    margin-top: 170px;
+    margin-left: 110px;
+    float: left;
+  }
+  #bestsellersbanner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/bannerimage1.png);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 90px;
+    margin: 90px;
+    border-radius: 20px;
+  }
+
+  #bestsellersbanner h1{
+    color: white;
+    font-weight: 900;
+    font-size: 80px;
+    -webkit-text-stroke: 2px rgb(19, 16, 39);
+  }
+  #salebanner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/saleimage.png);
+    min-width: 30%;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    margin-bottom: 90px;
+  }
+  #salebanner h1{
+    color: white;
+    font-weight: 900;
+    font-size: 6vw;
+    -webkit-text-stroke: 0.5px black;
+    margin-left: 7%;
+    margin-right: 7%;
+    float: none;
+  }
+  #newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 90%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #newsletter button{
+    background-color: #b2a694;
+    color: #201a14;
+    height: 3.24rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 20%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    float: right;
+    margin-right: 8%;
+  }
+}
+
+@media screen and (max-width: 360px){
+  html, body {
+    height: 100vh;
+    width: 100vw;
+    padding-left: 50px;
+    padding-right: 100px;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  img[alt~="logo"]{
+    height: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  footer{
+    padding-bottom: 30px;
+    width: 100%;
+    background-color:#b2a694;
+    margin: 0;
+  }
+  .lowLine img{
+    width: 100%;
+  }
+  .highLine img{
+    width: 100%;
+  }
+  img[alt~="staysexy"]{
+    width: 100%;
+    margin-top: 200px;
+    float: left;
+  }
+  img[alt~="newarrivals"]{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+
+  img[alt~="staysexy"]{
+    top: 0;
+    overflow: hidden;
+  }
+  #bestsellersbanner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    left: 0;
+    align-items: flex-start;
+    background-image: url(../images/bannerimage1.png);
+    min-width: 80%;
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+
+  #bestsellersbanner h1{
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    -webkit-text-stroke: 0.5px rgb(19, 16, 39);
+  }
+  #salebanner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/saleimage.png);
+    width: 300px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
+  }
+  #salebanner h1{
+    color: white;
+    font-weight: 300;
+    font-size: 6vw;
+    -webkit-text-stroke: 0.5px black;
+    margin-left: 7%;
+    margin-right: 7%;
+    float: none;
+  }
+  .row {
+    padding-top: 10px;
+    display: grid;
+    padding-bottom: 30px;
+  }
+  .column_new {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  
+  .column_small {
+    padding: 3px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  
+  #newsletter input {
+    height: 3.125rem;
+    padding:  0 50px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #newsletter button{
+    background-color: #b2a694;
+    color: #201a14;
+    height: 3.24rem;
+    padding: 0.75em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: left;
+    outline: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    float: right;
+  }
+}
+
+
 
 nav{
   position: sticky;
@@ -10,11 +317,6 @@ nav{
   padding-right: 10px;
 }
 
-img[alt~="logo"]{
-  height: 50px;
-  padding-top: 13px;
-  padding-left: 20px;
-}
 
 nav ul{
   box-sizing: border-box;
@@ -60,41 +362,7 @@ li a:hover{
   background-color: #B74B4B;
 }
 
-/* desktop */
-@media screen and (min-width: 360px){
-  nav ul{
-    flex-direction: row;
-  }
-}
 
-/* mobile */
-@media screen and (max-width: 360px){
-  nav ul{
-    flex-direction: column;
-  }
-
-  img[alt~="staysexy"]{
-    /* margin-top: 150px;
-    width: 100%; */
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-
-  /* img[alt~="newarrivals"]{
-   width: 150%;
-  } */
-
-  .row1 {
-    margin-top: 50px;
-    margin-left: 10px;
-    padding-left: 0;
-    width: 150%;
-
-  }
-
-
-}
 
 
 .fixed-header {
@@ -202,76 +470,6 @@ img[alt~="profile"]{
 }
 
 
-
-
-
-.border {
-  position: fixed;
-  z-index: 1;
-  border: 50px solid transparent;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-image: url(/images/leopardborder.png) 90 stretch;
-  border-image-repeat: initial;
-} 
-
-
-
-
-
-
-
-
-
-  .row1 {
-    display: flex;
-  }
-  
-  .column1 {
-    flex: 1;
-  }
-
-  img[alt~="staysexy"]{
-    width: 80%;
-    margin-top: 170px;
-    margin-left: 110px;
-    float: left;
-  }
-
-  img[alt~="newarrivals"]{
-    width: 80%;
-    margin-top: 170px;
-    margin-right: 120px;
-    float: right;
-    cursor: pointer;
-  }
-
-
-  #bestsellersbanner .banner-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url(/images/bannerimage1.png);
-    min-width: 30%;
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-    margin-bottom: 90px;
-    margin: 90px;
-    border-radius: 20px;
-  }
-
-  #bestsellersbanner h1{
-    color: white;
-    font-weight: 900;
-    font-size: 80px;
-    -webkit-text-stroke: 2px rgb(19, 16, 39);
-  }
-
   #bestsellersbanner h2{
     color: rgb(255, 255, 255);
     font-weight: 800;
@@ -280,57 +478,18 @@ img[alt~="profile"]{
     -webkit-text-stroke: 0.5px rgb(19, 16, 39);
   }
 
-  #salebanner .banner-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url(/images/saleimage.png);
-    min-width: 30%;
-    width: 100%;
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-    padding-top: 20px;
-    margin-bottom: 90px;
-  }
 
-  #salebanner h1{
-    color: white;
-    font-weight: 900;
-    font-size: 6vw;
-    -webkit-text-stroke: 0.5px black;
-    margin-left: 7%;
-    margin-right: 7%;
-    float: none;
-  }
-
-  /* #salebanner h2{
-    color: rgb(255, 255, 255);
-    font-weight: 800;
-    font-size: 2vw;
-    /* padding-bottom: 10%; */
-    /* text-align: right;
-    margin-left: 70%;
-    -webkit-text-stroke: 0.5px rgb(19, 16, 39);
-    z-index: 2;
-  } */
-
-
-
-  #newsletter{
+#newsletter{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    /* background-image: ; */
-    /* background-repeat: no-repeat; */
     background-position: 20% 30%;
     background-color: #201a14;
     padding: 30px;
     margin: 20px;
     margin-bottom: 100px;
-  }
+  } 
 
   #newsletter h2{
     color: rgb(255, 255, 255);
@@ -350,48 +509,12 @@ img[alt~="profile"]{
     color: #b2a694;
   }
 
-  #newsletter input {
-    height: 3.125rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 90%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  #newsletter button{
-    background-color: #b2a694;
-    color: #201a14;
-    height: 3.24rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 20%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    float: right;
-    margin-right: 8%;
-  }
-
   #newsletter .form{
     display: flex;
     width: 40%;
   }
 
-  footer{
-    height:50vh;
-    background-color:#b2a694;
-  
-  }
-  
- 
-
-.column {
+/* .column {
 float: left;
 padding: 30px;
 position: static;
@@ -421,4 +544,4 @@ clear: both;
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 20px;
-}
+} */
