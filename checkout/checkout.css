@@ -13,7 +13,7 @@ html{
   img[alt~="logo"]{
     height: 70px;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-bottom: 20px;
   }
   
   h1 {
@@ -21,21 +21,21 @@ html{
     margin: 20px 0;
   }
   
-  .checkout-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px;
-  }
+
   
   .checkout-left {
-    flex: 1;
+    margin-top: 30px;
     padding-right: 20px;
+    width: 50%;
+    float: left;
+    margin-left: 10px;
   }
   
   .checkout-right {
-    flex: 1;
+    margin-top: 135px;
     padding-left: 20px;
+    width: 40%;
+    float: right;
   }
   
   h2 {
@@ -106,6 +106,7 @@ form{
   
   .checkout-right .product img {
     width: 100px;
+    min-width: 100px;
     height: 100px;
     object-fit: cover;
     margin-right: 10px;
@@ -188,4 +189,45 @@ form{
   
   .show-popup {
     display: block;
+  }
+
+  /* MOBILE */
+  @media screen and (max-width: 360px){
+
+    img[alt~="logo"]{
+      height: 50px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    img[alt~="paypal"]{
+      height: 30px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    img[alt~="gpay"]{
+      height: 30px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    img[alt~="shoppay"]{
+      height: 30px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    .checkout-left {
+      margin-top: 30px;
+      width: 100%;
+      float: right;
+      margin-left: 10px;
+
+    }
+    
+    .checkout-right {
+      margin-top: 10px;
+      width: 100%;
+      float: right;
+    }
+
   }
